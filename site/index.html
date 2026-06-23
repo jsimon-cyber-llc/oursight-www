@@ -157,25 +157,13 @@
             <span class="app-ui__status">8K master · 2.4×</span>
           </div>
           <div class="stage">
-            <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <rect class="ln turf" x="20" y="20" width="600" height="320"/>
-              <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
-              <line class="ln" x1="160" y1="20" x2="160" y2="340"/>
-              <line class="ln" x1="480" y1="20" x2="480" y2="340"/>
-              <circle class="ln" cx="100" cy="180" r="30"/><rect class="ln" x="92" y="170" width="6" height="20"/>
-              <circle class="ln" cx="540" cy="180" r="30"/><rect class="ln" x="542" y="170" width="6" height="20"/>
-              <path class="ln" d="M314 174l12 12M326 174l-12 12"/>
-              <circle class="dot-off" cx="300" cy="150" r="9"/><text class="dot-num" x="300" y="150">22</text>
-              <circle class="dot-off" cx="360" cy="210" r="9"/><text class="dot-num" x="360" y="210">7</text>
-              <circle class="dot-def" cx="332" cy="172" r="9"/>
-              <circle class="dot-def" cx="392" cy="196" r="9"/>
-              <circle class="ball" cx="318" cy="162" r="4"/>
-            </svg>
+            <video class="stage__video" data-bg-video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-loop-poster.jpg" aria-hidden="true">
+              <source src="assets/video/hero-loop.mp4" type="video/mp4">
+            </video>
             <div class="cropframe stage__crop">
               <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
             </div>
             <span class="tag-on-field" style="left:14%;top:64%">#22 · Midfield</span>
-            <div class="play-glyph"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><use href="#i-play"/></svg></div>
           </div>
           <div class="transport">
             <div class="scrubber"><span class="scrubber__played"></span><span class="scrubber__head"></span></div>
@@ -260,7 +248,9 @@
 
 <!-- ============ Immersive "whole field" band ============ -->
 <section class="section--dark action-band" aria-labelledby="wholefield">
-  <img class="action-band__bg" src="assets/img/action-band.jpg" alt="" aria-hidden="true" loading="lazy" width="1376" height="768">
+  <video class="action-band__bg" data-bg-video autoplay muted loop playsinline preload="metadata" poster="assets/img/field-loop-poster.jpg" aria-hidden="true">
+    <source src="assets/video/field-loop.mp4" type="video/mp4">
+  </video>
   <div class="cropframe action-band__crop" aria-hidden="true">
     <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
     <span class="action-band__chip">8K master · crop 2.4×</span>
@@ -606,7 +596,9 @@
   <div class="container camera">
     <div class="camera__photo cropframe" data-reveal>
       <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
-      <img src="assets/img/camera-on-pole.jpg" alt="A commodity action camera mounted at the top of a midfield pole overlooking a lacrosse field at dusk" loading="lazy" width="928" height="1152">
+      <video class="camera__media" data-bg-video autoplay muted loop playsinline preload="metadata" poster="assets/img/pole-loop-poster.jpg" aria-hidden="true">
+        <source src="assets/video/pole-loop.mp4" type="video/mp4">
+      </video>
       <span class="camera__overlay">Insta360 Ace Pro 2 · ~$400 · yours</span>
     </div>
     <div class="camera__body" data-reveal>

@@ -185,4 +185,26 @@
       // else: let it submit to the configured endpoint (e.g. Formspree / Worker).
     });
   });
+
+  /* ---------- Background video loops ---------- */
+  const bgVideos = $$('video[data-bg-video]');
+  if (bgVideos.length) {
+    bgVideos.forEach((v) => {
+      if (prefersReduced) {
+        // honor reduced-motion: never autoplay; the poster image stays shown
+        v.removeAttribute('autoplay');
+        v.pause();
+        return;
+      }
+      const tryPlay = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((en) => { if (en.isIntersecting) tryPlay(); else v.pause(); });
+        }, { threshold: 0.1 });
+        io.observe(v);
+      } else {
+        tryPlay();
+      }
+    });
+  }
 })();
