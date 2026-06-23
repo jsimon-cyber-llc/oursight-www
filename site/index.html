@@ -77,6 +77,11 @@
   <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13v8"/><path d="M4 14.9A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 2.5 8.2"/><path d="m8 17 4-4 4 4"/></symbol>
   <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
   <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></symbol>
   <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
   <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12.8 2.2 8.5 3.9a1 1 0 0 1 0 1.8l-8.5 3.9a2 2 0 0 1-1.6 0L2.6 7.9a1 1 0 0 1 0-1.8l8.5-3.9a2 2 0 0 1 1.6 0Z"/><path d="m22 17.6-9.2 4.2a2 2 0 0 1-1.6 0L2 17.6"/><path d="m22 12.6-9.2 4.2a2 2 0 0 1-1.6 0L2 12.6"/></symbol>
@@ -103,7 +108,7 @@
 <header class="header" data-header>
   <div class="container">
     <a class="brand" href="#top" aria-label="OurSight home">
-      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="4.5" fill="#fff"/></svg>
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="16.5" fill="none" stroke="#2563eb" stroke-width="5"/><path d="M27.5 23.5 L43 32 L27.5 40.5 Z" fill="#2563eb"/></svg>
       <span class="brand__name">OurSight</span>
     </a>
 
@@ -146,41 +151,52 @@
     </div>
 
     <div class="hero__visual" data-reveal data-reveal-delay="120">
-      <!-- Film Room mockup -->
-      <div class="cropframe" style="margin-top:8px">
-        <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
-        <div class="app-ui">
-          <div class="app-ui__chrome">
-            <svg class="app-ui__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="5" fill="#fff"/></svg>
-            <span class="app-ui__dots"><i></i><i></i><i></i></span>
-            <span class="app-ui__crumb">Varsity · vs. Northgate · 10/14</span>
-            <span class="app-ui__status">8K master · 2.4×</span>
+      <!-- The Film Room, built to match the real OurSight app 1:1.
+           The field below is a stylized illustration standing in for your footage. -->
+      <div class="player">
+        <div class="player__head">
+          <span class="player__title">
+            <svg class="player__logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="16.5" fill="none" stroke="#2563eb" stroke-width="5"/><path d="M27.5 23.5 L43 32 L27.5 40.5 Z" fill="#2563eb"/></svg>
+            Varsity vs. Northgate · Oct 14
+          </span>
+          <span class="player__export"><svg aria-hidden="true"><use href="#i-download"/></svg> Export</span>
+        </div>
+        <div class="player__stage">
+          <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect class="ln turf" x="20" y="20" width="600" height="320"/>
+            <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
+            <line class="ln" x1="160" y1="20" x2="160" y2="340"/>
+            <line class="ln" x1="480" y1="20" x2="480" y2="340"/>
+            <circle class="ln" cx="100" cy="180" r="30"/><rect class="ln" x="92" y="170" width="6" height="20"/>
+            <circle class="ln" cx="540" cy="180" r="30"/><rect class="ln" x="542" y="170" width="6" height="20"/>
+            <path class="ln" d="M314 174l12 12M326 174l-12 12"/>
+            <circle class="dot-off" cx="300" cy="150" r="9"/><text class="dot-num" x="300" y="150">22</text>
+            <circle class="dot-off" cx="360" cy="210" r="9"/><text class="dot-num" x="360" y="210">7</text>
+            <circle class="dot-def" cx="332" cy="172" r="9"/><circle class="dot-def" cx="392" cy="196" r="9"/>
+            <circle class="ball" cx="318" cy="162" r="4"/>
+          </svg>
+          <svg class="player__tele" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle cx="300" cy="150" r="22" fill="none" stroke="#2563eb" stroke-width="3"/>
+            <path d="M300 150 C 340 118, 402 128, 442 176" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#hero-ah)"/>
+            <defs><marker id="hero-ah" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#2563eb"/></marker></defs>
+          </svg>
+          <span class="tag-on-field" style="left:14%;top:62%">#22 · Midfield</span>
+        </div>
+        <div class="player__seek">
+          <div class="player__seek-track">
+            <span class="player__seek-loop" style="left:30%;width:15%"></span>
+            <span class="player__seek-fill" style="width:34%"></span>
+            <span class="player__seek-thumb" style="left:34%"></span>
           </div>
-          <div class="stage">
-            <video class="stage__video" data-bg-video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-loop-poster.jpg" aria-hidden="true">
-              <source src="assets/video/hero-loop.mp4" type="video/mp4">
-            </video>
-            <div class="cropframe stage__crop">
-              <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
-            </div>
-            <span class="tag-on-field" style="left:14%;top:64%">#22 · Midfield</span>
-          </div>
-          <div class="transport">
-            <div class="scrubber"><span class="scrubber__played"></span><span class="scrubber__head"></span></div>
-            <div class="transport__row">
-              <span class="tc">00:14:32 / 00:48:10</span>
-              <span class="transport__icons">
-                <svg aria-hidden="true"><use href="#i-skip-back"/></svg>
-                <svg aria-hidden="true"><use href="#i-step-back"/></svg>
-                <svg class="is-primary" aria-hidden="true"><use href="#i-pause"/></svg>
-                <svg aria-hidden="true"><use href="#i-step-fwd"/></svg>
-                <svg aria-hidden="true"><use href="#i-skip-fwd"/></svg>
-              </span>
-              <span class="spacer"></span>
-              <span class="chip">0.25×</span>
-              <span class="chip chip--on">A–B loop</span>
-            </div>
-          </div>
+        </div>
+        <div class="player__controls">
+          <button class="pbtn pbtn--play" aria-hidden="true" tabindex="-1"><svg><use href="#i-play"/></svg></button>
+          <button class="pbtn" aria-hidden="true" tabindex="-1"><svg><use href="#i-chevron-left"/></svg></button>
+          <button class="pbtn" aria-hidden="true" tabindex="-1"><svg><use href="#i-chevron-right"/></svg></button>
+          <button class="pbtn pbtn--wide" aria-hidden="true" tabindex="-1"><svg><use href="#i-gauge"/></svg> 1x</button>
+          <button class="pbtn pbtn--wide pbtn--active" aria-hidden="true" tabindex="-1"><svg><use href="#i-repeat"/></svg> Loop 2:00–2:55</button>
+          <button class="pbtn pbtn--wide" aria-hidden="true" tabindex="-1"><svg><use href="#i-pen"/></svg> Draw</button>
+          <span class="player__time">2:14 / 6:32</span>
         </div>
       </div>
     </div>
@@ -251,10 +267,6 @@
   <video class="action-band__bg" data-bg-video autoplay muted loop playsinline preload="metadata" poster="assets/img/field-loop-poster.jpg" aria-hidden="true">
     <source src="assets/video/field-loop.mp4" type="video/mp4">
   </video>
-  <div class="cropframe action-band__crop" aria-hidden="true">
-    <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
-    <span class="action-band__chip">8K master · crop 2.4×</span>
-  </div>
   <div class="container">
     <div class="action-band__copy" data-reveal>
       <p class="eyebrow">The whole field</p>
@@ -346,30 +358,34 @@
     <!-- 1. Film Room -->
     <div class="feature">
       <div class="feature__media" data-reveal>
-        <div class="cropframe">
-          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
-          <div class="app-ui">
-            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Clip · Clear vs. 10-man ride</span><span class="app-ui__status">8K master</span></div>
-            <div class="stage">
-              <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect class="ln turf" x="20" y="20" width="600" height="320"/>
-                <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
-                <line class="ln" x1="160" y1="20" x2="160" y2="340"/><line class="ln" x1="480" y1="20" x2="480" y2="340"/>
-                <circle class="ln" cx="100" cy="180" r="30"/><circle class="ln" cx="540" cy="180" r="30"/>
-                <circle class="dot-off" cx="220" cy="150" r="9"/><circle class="dot-off" cx="300" cy="220" r="9"/><circle class="dot-off" cx="170" cy="240" r="9"/>
-                <circle class="dot-def" cx="250" cy="170" r="9"/><circle class="dot-def" cx="330" cy="200" r="9"/>
-                <circle class="ball" cx="208" cy="160" r="4"/>
-              </svg>
-              <div class="play-glyph"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><use href="#i-play"/></svg></div>
-            </div>
-            <div class="transport">
-              <div class="scrubber"><span class="scrubber__played" style="inset:0 55% 0 0"></span><span class="scrubber__head" style="left:45%"></span></div>
-              <div class="transport__row">
-                <span class="tc">00:22:08 / 00:48:10</span>
-                <span class="transport__icons"><svg aria-hidden="true"><use href="#i-skip-back"/></svg><svg aria-hidden="true"><use href="#i-step-back"/></svg><svg class="is-primary" aria-hidden="true"><use href="#i-play"/></svg><svg aria-hidden="true"><use href="#i-step-fwd"/></svg><svg aria-hidden="true"><use href="#i-skip-fwd"/></svg></span>
-                <span class="spacer"></span><span class="chip">0.5×</span><span class="chip">J K L</span>
-              </div>
-            </div>
+        <div class="player">
+          <div class="player__head">
+            <span class="player__title"><svg class="player__logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="16.5" fill="none" stroke="#2563eb" stroke-width="5"/><path d="M27.5 23.5 L43 32 L27.5 40.5 Z" fill="#2563eb"/></svg> Clip · Clear vs. 10-man ride</span>
+            <span class="player__export"><svg aria-hidden="true"><use href="#i-download"/></svg> Export</span>
+          </div>
+          <div class="player__stage">
+            <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect class="ln turf" x="20" y="20" width="600" height="320"/>
+              <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
+              <line class="ln" x1="160" y1="20" x2="160" y2="340"/><line class="ln" x1="480" y1="20" x2="480" y2="340"/>
+              <circle class="ln" cx="100" cy="180" r="30"/><circle class="ln" cx="540" cy="180" r="30"/>
+              <circle class="dot-off" cx="220" cy="150" r="9"/><circle class="dot-off" cx="300" cy="220" r="9"/><circle class="dot-off" cx="170" cy="240" r="9"/>
+              <circle class="dot-def" cx="250" cy="170" r="9"/><circle class="dot-def" cx="330" cy="200" r="9"/>
+              <circle class="ball" cx="208" cy="160" r="4"/>
+            </svg>
+            <span class="tag-on-field" style="left:28%;top:60%">#7 · Attack</span>
+          </div>
+          <div class="player__seek">
+            <div class="player__seek-track"><span class="player__seek-fill" style="width:46%"></span><span class="player__seek-thumb" style="left:46%"></span></div>
+          </div>
+          <div class="player__controls">
+            <button class="pbtn pbtn--play" aria-hidden="true" tabindex="-1"><svg><use href="#i-pause"/></svg></button>
+            <button class="pbtn" aria-hidden="true" tabindex="-1"><svg><use href="#i-chevron-left"/></svg></button>
+            <button class="pbtn" aria-hidden="true" tabindex="-1"><svg><use href="#i-chevron-right"/></svg></button>
+            <button class="pbtn pbtn--wide" aria-hidden="true" tabindex="-1"><svg><use href="#i-gauge"/></svg> 0.5x</button>
+            <button class="pbtn pbtn--wide" aria-hidden="true" tabindex="-1"><svg><use href="#i-repeat"/></svg> Loop A–B</button>
+            <button class="pbtn pbtn--wide" aria-hidden="true" tabindex="-1"><svg><use href="#i-pen"/></svg> Draw</button>
+            <span class="player__time">3:04 / 6:32</span>
           </div>
         </div>
       </div>
@@ -388,35 +404,35 @@
     <!-- 2. Telestration -->
     <div class="feature feature--flip">
       <div class="feature__media" data-reveal>
-        <div class="cropframe">
-          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
-          <div class="app-ui">
-            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Annotate · paused 00:22:14</span><span class="app-ui__status">Exportable</span></div>
-            <div class="stage">
-              <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect class="ln turf" x="20" y="20" width="600" height="320"/>
-                <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
-                <circle class="ln" cx="540" cy="180" r="30"/>
-                <circle class="dot-off" cx="250" cy="150" r="9"/><circle class="dot-off" cx="350" cy="210" r="9"/>
-                <circle class="dot-def" cx="300" cy="175" r="9"/><circle class="dot-def" cx="410" cy="200" r="9"/>
-              </svg>
-              <svg class="stage__overlay" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:3">
-                <path d="M250 150 C 300 120, 360 130, 410 175" fill="none" stroke="#5b8bf7" stroke-width="3.5" stroke-linecap="round"/>
-                <circle cx="250" cy="150" r="20" fill="none" stroke="#5b8bf7" stroke-width="3"/>
-                <path d="M350 210 L 470 210" fill="none" stroke="#5b8bf7" stroke-width="3" stroke-dasharray="8 7" stroke-linecap="round" marker-end="url(#ah)"/>
-                <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#5b8bf7"/></marker></defs>
-              </svg>
-              <div class="tele-toolbar">
-                <button class="is-active" aria-hidden="true" tabindex="-1"><svg><use href="#i-pen"/></svg></button>
-                <button aria-hidden="true" tabindex="-1"><svg><use href="#i-circle"/></svg></button>
-                <button aria-hidden="true" tabindex="-1"><svg><use href="#i-arrow-tool"/></svg></button>
-                <button aria-hidden="true" tabindex="-1"><svg><use href="#i-eraser"/></svg></button>
-              </div>
+        <div class="player">
+          <div class="player__head">
+            <span class="player__title"><svg class="player__logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="16.5" fill="none" stroke="#2563eb" stroke-width="5"/><path d="M27.5 23.5 L43 32 L27.5 40.5 Z" fill="#2563eb"/></svg> Annotate · paused 2:14</span>
+            <span class="player__export"><svg aria-hidden="true"><use href="#i-download"/></svg> Export</span>
+          </div>
+          <div class="player__stage">
+            <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect class="ln turf" x="20" y="20" width="600" height="320"/>
+              <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
+              <circle class="ln" cx="540" cy="180" r="30"/>
+              <circle class="dot-off" cx="250" cy="150" r="9"/><circle class="dot-off" cx="350" cy="210" r="9"/>
+              <circle class="dot-def" cx="300" cy="175" r="9"/><circle class="dot-def" cx="410" cy="200" r="9"/>
+            </svg>
+            <svg class="player__tele" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <path d="M250 150 C 300 120, 360 130, 410 175" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="250" cy="150" r="20" fill="none" stroke="#3b82f6" stroke-width="3"/>
+              <path d="M350 210 L 470 210" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="8 7" stroke-linecap="round" marker-end="url(#tele-ah)"/>
+              <defs><marker id="tele-ah" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#3b82f6"/></marker></defs>
+            </svg>
+            <div class="tele-toolbar">
+              <button class="is-active" aria-hidden="true" tabindex="-1"><svg><use href="#i-pen"/></svg></button>
+              <button aria-hidden="true" tabindex="-1"><svg><use href="#i-line"/></svg></button>
+              <button aria-hidden="true" tabindex="-1"><svg><use href="#i-circle"/></svg></button>
+              <button aria-hidden="true" tabindex="-1"><svg><use href="#i-arrow-tool"/></svg></button>
             </div>
-            <div class="export-row">
-              <span class="btn-mini"><svg aria-hidden="true"><use href="#i-download"/></svg> Export frame</span>
-              <span class="filemeta">annotated_clip.mp4 · <span class="ok"><svg aria-hidden="true"><use href="#i-check"/></svg>exportable</span></span>
-            </div>
+          </div>
+          <div class="export-row">
+            <span class="btn-mini"><svg aria-hidden="true"><use href="#i-download"/></svg> Export frame</span>
+            <span class="filemeta">annotated_clip.mp4 · <span class="ok"><svg aria-hidden="true"><use href="#i-check"/></svg>exportable</span></span>
           </div>
         </div>
       </div>
@@ -438,13 +454,13 @@
         <div class="cropframe">
           <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
           <div class="app-ui">
-            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Who studied the film · last 7 days</span><span class="app-ui__status">Team · 24</span></div>
+            <div class="app-ui__chrome"><span class="app-ui__crumb">Who studied the film · last 7 days</span><span class="app-ui__status">Team · 24</span></div>
             <div class="engage">
-              <div class="engage__head"><svg aria-hidden="true"><use href="#i-eye"/></svg> Watch engagement · this week</div>
-              <div class="engage__row"><div class="engage__who"><span class="avatar">RM</span><span>Reese M.</span></div><div class="bars"><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l1"></i></div></div>
-              <div class="engage__row"><div class="engage__who"><span class="avatar">JT</span><span>Jordan T.</span></div><div class="bars"><i class="l2"></i><i class="l3"></i><i class="l1"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i></div></div>
-              <div class="engage__row"><div class="engage__who"><span class="avatar">AK</span><span>Avery K.</span></div><div class="bars"><i class="l1"></i><i class="l2"></i><i class="l2"></i><i class="l1"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i></div></div>
-              <div class="engage__row engage__row--cold"><div class="engage__who"><span class="avatar">DC</span><span>Devin C.</span></div><div class="bars"><i></i><i></i><i class="l1"></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="engage__head"><svg aria-hidden="true"><use href="#i-eye"/></svg> Watch engagement · clip coverage</div>
+              <div class="cov"><span class="cov__name">Reese M.</span><span class="cov__track"><span class="cov__fill cov--hi" style="width:92%"></span></span><span class="cov__pct">92%</span></div>
+              <div class="cov"><span class="cov__name">Jordan T.</span><span class="cov__track"><span class="cov__fill cov--mid" style="width:64%"></span></span><span class="cov__pct">64%</span></div>
+              <div class="cov"><span class="cov__name">Avery K.</span><span class="cov__track"><span class="cov__fill cov--mid" style="width:38%"></span></span><span class="cov__pct">38%</span></div>
+              <div class="cov"><span class="cov__name">Devin C.</span><span class="cov__track"><span class="cov__fill cov--lo" style="width:8%"></span></span><span class="cov__pct">8%</span></div>
             </div>
           </div>
         </div>
@@ -467,16 +483,16 @@
         <div class="cropframe">
           <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
           <div class="app-ui">
-            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">#22 Reese M. · draft insights</span><span class="app-ui__status">Draft · v1</span></div>
+            <div class="app-ui__chrome"><span class="app-ui__crumb">#22 Reese M. · draft insights</span><span class="app-ui__status">Draft · v1</span></div>
             <div style="padding:16px;display:grid;gap:12px">
               <div class="engage__head"><svg aria-hidden="true"><use href="#i-spark"/></svg> Patterns worth coaching <span class="tag" style="margin-left:auto">v1</span></div>
               <div style="border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 14px;display:grid;gap:7px">
-                <div style="display:flex;gap:10px;align-items:center"><span class="chip chip--on">00:31:12</span><span style="font-size:var(--t-small);color:var(--text-strong);font-weight:500">Not getting to the spot in the clear</span></div>
+                <div style="display:flex;gap:10px;align-items:center"><span class="chip chip--on">31:12</span><span style="font-size:var(--t-small);color:var(--text-strong);font-weight:500">Not getting to the spot in the clear</span></div>
                 <p style="font-size:var(--t-small);margin:0">Trails the break on 3 of 4 clears in this half — review the clip and edit before publishing.</p>
                 <div style="display:flex;gap:8px"><span class="chip"><svg style="width:13px;height:13px" aria-hidden="true"><use href="#i-pen"/></svg> Edit</span><span class="chip chip--on"><svg style="width:13px;height:13px" aria-hidden="true"><use href="#i-check"/></svg> Approve &amp; publish</span></div>
               </div>
               <div style="border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 14px;display:grid;gap:7px">
-                <div style="display:flex;gap:10px;align-items:center"><span class="chip chip--on">00:38:47</span><span style="font-size:var(--t-small);color:var(--text-strong);font-weight:500">Forces the feed under pressure</span></div>
+                <div style="display:flex;gap:10px;align-items:center"><span class="chip chip--on">38:47</span><span style="font-size:var(--t-small);color:var(--text-strong);font-weight:500">Forces the feed under pressure</span></div>
                 <p style="font-size:var(--t-small);margin:0">Two unforced turnovers feeding into a double — clickable to the exact moment.</p>
               </div>
             </div>
@@ -501,7 +517,7 @@
         <div class="cropframe">
           <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
           <div class="app-ui">
-            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Top-down · clear sequence</span><span class="app-ui__status">AI-assisted</span></div>
+            <div class="app-ui__chrome"><span class="app-ui__crumb">Top-down · clear sequence</span><span class="app-ui__status">AI-assisted</span></div>
             <div style="padding:14px;background:var(--surface-sunk)">
               <svg class="field" viewBox="0 0 640 380" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="border:1px solid var(--border)">
                 <rect class="ln turf" x="20" y="20" width="600" height="340"/>
@@ -599,7 +615,7 @@
       <video class="camera__media" data-bg-video autoplay muted loop playsinline preload="metadata" poster="assets/img/pole-loop-poster.jpg" aria-hidden="true">
         <source src="assets/video/pole-loop.mp4" type="video/mp4">
       </video>
-      <span class="camera__overlay">Insta360 Ace Pro 2 · ~$400 · yours</span>
+      <span class="camera__overlay">On a midfield pole · yours to keep</span>
     </div>
     <div class="camera__body" data-reveal>
       <p class="eyebrow">The hardware</p>
@@ -810,7 +826,7 @@
     <div class="footer__top">
       <div class="footer__brand">
         <a class="brand" href="#top" aria-label="OurSight home">
-          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="4.5" fill="#fff"/></svg>
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="16.5" fill="none" stroke="#2563eb" stroke-width="5"/><path d="M27.5 23.5 L43 32 L27.5 40.5 Z" fill="#2563eb"/></svg>
           <span class="brand__name">OurSight</span>
         </a>
         <p>Own your film. Forever. Coach-owned lacrosse film &amp; analysis, built by a head coach.</p>

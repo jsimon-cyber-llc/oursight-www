@@ -254,7 +254,7 @@ strong { color: var(--text-strong); font-weight: 600; }
 .tele-toolbar button { width: 30px; height: 30px; border-radius: 7px; color: rgba(255,255,255,.7); display: flex; align-items: center; justify-content: center; }
 .tele-toolbar button svg { width: 16px; height: 16px; }
 .tele-toolbar button.is-active { background: var(--blue-500); color: #fff; }
-.export-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 12px 14px; border-top: 1px solid var(--border); }
+.export-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 12px 14px; border-top: 1px solid var(--border); background: var(--surface); }
 .export-row .filemeta { font-family: var(--font-mono); font-size: var(--t-tag); color: var(--muted); display: inline-flex; align-items: center; gap: 7px; }
 .export-row .ok { color: var(--success); display: inline-flex; align-items: center; gap: 4px; }
 .export-row .ok svg { width: 14px; height: 14px; }
@@ -275,6 +275,45 @@ strong { color: var(--text-strong); font-weight: 600; }
 .bars i.l1 { background: var(--blue-100); } .bars i.l2 { background: var(--blue-200); }
 .bars i.l3 { background: var(--blue-400); } .bars i.l4 { background: var(--blue-500); }
 .engage__row--cold .engage__who span { color: var(--muted); }
+/* real coverage rows: name | single coverage bar (green/amber/blue band) | % */
+.cov { display: flex; align-items: center; gap: 12px; }
+.cov + .cov { margin-top: 11px; }
+.cov__name { width: 92px; flex: none; font-size: var(--t-small); color: var(--text-body);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cov__track { position: relative; height: 12px; flex: 1; border-radius: 99px; background: var(--gray-150); overflow: hidden; }
+.cov__fill { display: block; height: 100%; border-radius: 99px; }
+.cov--hi { background: var(--success); }
+.cov--mid { background: var(--amber); }
+.cov--lo { background: rgba(37,99,235,.4); }
+.cov__pct { width: 38px; flex: none; text-align: right; font-family: var(--font-mono); font-size: var(--t-tag); color: var(--muted); }
+
+/* ---------------- Film player (1:1 with the real OurSight FilmPlayer) ---------------- */
+.player { border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; background: #000; box-shadow: var(--shadow-lg); }
+.player__head { display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 10px 12px; background: var(--surface); border-bottom: 1px solid var(--border); }
+.player__title { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-small); font-weight: 500; color: var(--text-strong); min-width: 0; }
+.player__title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.player__logo { width: 18px; height: 18px; flex: none; }
+.player__export { flex: none; display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono);
+  font-size: var(--t-tag); color: var(--primary); border: 1px solid var(--border); border-radius: var(--r-sm); padding: 5px 9px; }
+.player__export svg { width: 14px; height: 14px; }
+.player__stage { position: relative; aspect-ratio: 16 / 9; background: var(--bg-stage); overflow: hidden; }
+.player__stage .field { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 0; filter: brightness(.72) saturate(.9); }
+.player__tele { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; }
+.player__seek { background: var(--surface); padding: 11px 12px 0; }
+.player__seek-track { position: relative; height: 6px; border-radius: 99px; background: var(--gray-200); }
+.player__seek-loop { position: absolute; top: 0; height: 6px; border-radius: 99px; background: rgba(37,99,235,.28); }
+.player__seek-fill { position: absolute; left: 0; top: 0; height: 6px; border-radius: 99px; background: var(--primary); }
+.player__seek-thumb { position: absolute; top: 50%; transform: translate(-50%,-50%); width: 14px; height: 14px;
+  border-radius: 50%; background: var(--primary); border: 2px solid #fff; box-shadow: var(--shadow-sm); }
+.player__controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--surface); padding: 10px 12px; }
+.pbtn { height: 36px; min-width: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  border: 1px solid var(--border); border-radius: var(--r-sm); color: var(--text); font-size: var(--t-ui); font-family: var(--font-body); padding: 0 6px; }
+.pbtn svg { width: 17px; height: 17px; }
+.pbtn--wide { padding: 0 10px; }
+.pbtn--play { background: var(--primary); color: #fff; border-color: var(--primary); padding: 0; width: 36px; }
+.pbtn--active { border-color: var(--primary); color: var(--primary); }
+.player__time { margin-left: auto; font-family: var(--font-mono); font-size: var(--t-tag); color: var(--muted); }
 
 /* ---------------- Hero ---------------- */
 .hero { position: relative; padding-top: calc(var(--header-h) + clamp(40px, 7vw, 84px)); padding-bottom: var(--section-y); overflow: hidden; }
