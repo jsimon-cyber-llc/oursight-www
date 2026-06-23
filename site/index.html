@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OurSight — Coach-Owned Lacrosse Film &amp; Analysis</title>
+<meta name="description" content="Whole-field lacrosse film on a $400 camera you own outright. Instant playback, exportable telestration, lacrosse-native analysis. No lock-in. Early access open.">
+<link rel="canonical" href="https://oursight.app/">
+<meta name="theme-color" content="#2563eb">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OurSight">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://oursight.app/">
+<meta property="og:title" content="Own your film. Coach in lacrosse language.">
+<meta property="og:description" content="OurSight is coach-owned lacrosse film &amp; analysis — an 8K whole-field master that's always yours, instant playback, and exportable drawings. A no-lock-in alternative to Veo and Hudl, built by a head coach.">
+<meta property="og:image" content="https://oursight.app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OurSight — coach-owned lacrosse film and analysis. No lock-in.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Own your film. Coach in lacrosse language.">
+<meta name="twitter:description" content="Coach-owned lacrosse film &amp; analysis. An 8K master that's always yours, instant playback, exportable telestration. A no-lock-in alternative to Veo and Hudl.">
+<meta name="twitter:image" content="https://oursight.app/assets/img/og.jpg">
+<meta name="twitter:image:alt" content="OurSight — coach-owned lacrosse film and analysis. No lock-in.">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/tokens.css">
+<link rel="stylesheet" href="/assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "OurSight",
+  "applicationCategory": "SportsApplication",
+  "operatingSystem": "Web, iOS, Android (PWA)",
+  "description": "Coach-owned lacrosse film, analysis and team development. Whole-field 8K capture on a commodity camera you own, instant playback, exportable telestration, and lacrosse-native analysis. A no-lock-in alternative to Veo and Hudl.",
+  "url": "https://oursight.app/",
+  "offers": { "@type": "Offer", "category": "Subscription", "availability": "https://schema.org/PreOrder" }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ Icon sprite (Lucide line icons) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g stroke-linecap="round" stroke-linejoin="round"></g>
+  </defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.54.84l11.5-7.5a1 1 0 0 0 0-1.68L8.54 3.66A1 1 0 0 0 7 4.5Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+  <symbol id="i-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></symbol>
+  <symbol id="i-arrow-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-eraser" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4.3-4.3a1.7 1.7 0 0 1 0-2.4l9.6-9.6a1.7 1.7 0 0 1 2.4 0l5.6 5.6a1.7 1.7 0 0 1 0 2.4L13 21"/><path d="M22 21H7"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="m16 6-4-4-4 4"/><path d="M12 2v14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-aperture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m14.3 8 5 8.6"/><path d="M9.7 8h10"/><path d="m7.4 12 5-8.6"/><path d="M9.7 16 4.7 7.4"/><path d="M14.3 16h-10"/><path d="m16.6 12-5 8.6"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13v8"/><path d="M4 14.9A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 2.5 8.2"/><path d="m8 17 4-4 4 4"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12.8 2.2 8.5 3.9a1 1 0 0 1 0 1.8l-8.5 3.9a2 2 0 0 1-1.6 0L2.6 7.9a1 1 0 0 1 0-1.8l8.5-3.9a2 2 0 0 1 1.6 0Z"/><path d="m22 17.6-9.2 4.2a2 2 0 0 1-1.6 0L2 17.6"/><path d="m22 12.6-9.2 4.2a2 2 0 0 1-1.6 0L2 12.6"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.2 3.5a.5.5 0 0 0 .8-.4V7.9a.5.5 0 0 0-.8-.4L16 11"/><rect width="14" height="12" x="2" y="6" rx="2"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+  <symbol id="i-hard-drive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/><path d="M6 16h.01"/><path d="M10 16h.01"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="10" x="2" y="7" rx="2"/><path d="M22 11v2"/><path d="M6 11v2"/><path d="M10 11v2"/></symbol>
+  <symbol id="i-sd" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h11l3 3v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M9 7v2"/><path d="M12 7v2"/><path d="M15 7v2"/></symbol>
+  <symbol id="i-pole" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5V21"/><path d="M8 21h8"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><path d="M21 16.5c-2 0-2-1.4-2-3v-2a7 7 0 1 0-14 0v2c0 1.6 0 3-2 3z"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-skip-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 20 9 12l10-8z"/><path d="M5 19V5"/></symbol>
+  <symbol id="i-step-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V4"/><path d="M14 20 4 12l10-8z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></symbol>
+  <symbol id="i-step-fwd" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16"/><path d="m10 4 10 8-10 8z"/></symbol>
+  <symbol id="i-skip-fwd" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 4 10 8-10 8z"/><path d="M19 5v14"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 1 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1Zm12 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 1 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1Z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><path d="M12 8a4 4 0 0 0 0 8 4 4 0 0 0 0-8Z"/></symbol>
+</svg>
+
+<!-- ============ Header ============ -->
+<header class="header" data-header>
+  <div class="container">
+    <a class="brand" href="#top" aria-label="OurSight home">
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="4.5" fill="#fff"/></svg>
+      <span class="brand__name">OurSight</span>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+      <svg class="i-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+
+    <nav class="nav" id="nav" data-nav data-spy aria-label="Primary">
+      <div class="nav__links">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#camera">The camera</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav__cta">
+        <a class="btn btn-ghost" href="mailto:hello@oursight.app?subject=Book%20a%20demo%20%E2%80%94%20OurSight">Book a demo</a>
+        <a class="btn btn-primary" href="#waitlist">Get early access</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy" data-reveal>
+      <p class="eyebrow hero__eyebrow">Coach-owned lacrosse film &amp; analysis</p>
+      <h1>Own your film. Coach in <span class="ink">lacrosse</span> language.</h1>
+      <p class="lead">Capture the whole field on a $400 camera you actually own, watch it the moment it offloads — no next-day wait — and break it down in clears, rides, and ground balls instead of generic sports stats.</p>
+      <div class="hero__cta">
+        <a class="btn btn-primary btn-lg" href="#waitlist">Get early access <svg class="i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost btn-lg" href="mailto:hello@oursight.app?subject=Book%20a%20demo%20%E2%80%94%20OurSight">Book a demo</a>
+      </div>
+      <p class="hero__trust"><svg aria-hidden="true"><use href="#i-lock"/></svg> The original 8K master is always yours, always exportable. No lease, no quota, no contract to claw your film back.</p>
+    </div>
+
+    <div class="hero__visual" data-reveal data-reveal-delay="120">
+      <!-- Film Room mockup -->
+      <div class="cropframe" style="margin-top:8px">
+        <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+        <div class="app-ui">
+          <div class="app-ui__chrome">
+            <svg class="app-ui__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="5" fill="#fff"/></svg>
+            <span class="app-ui__dots"><i></i><i></i><i></i></span>
+            <span class="app-ui__crumb">Varsity · vs. Northgate · 10/14</span>
+            <span class="app-ui__status">8K master · 2.4×</span>
+          </div>
+          <div class="stage">
+            <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect class="ln turf" x="20" y="20" width="600" height="320"/>
+              <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
+              <line class="ln" x1="160" y1="20" x2="160" y2="340"/>
+              <line class="ln" x1="480" y1="20" x2="480" y2="340"/>
+              <circle class="ln" cx="100" cy="180" r="30"/><rect class="ln" x="92" y="170" width="6" height="20"/>
+              <circle class="ln" cx="540" cy="180" r="30"/><rect class="ln" x="542" y="170" width="6" height="20"/>
+              <path class="ln" d="M314 174l12 12M326 174l-12 12"/>
+              <circle class="dot-off" cx="300" cy="150" r="9"/><text class="dot-num" x="300" y="150">22</text>
+              <circle class="dot-off" cx="360" cy="210" r="9"/><text class="dot-num" x="360" y="210">7</text>
+              <circle class="dot-def" cx="332" cy="172" r="9"/>
+              <circle class="dot-def" cx="392" cy="196" r="9"/>
+              <circle class="ball" cx="318" cy="162" r="4"/>
+            </svg>
+            <div class="cropframe stage__crop">
+              <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+            </div>
+            <span class="tag-on-field" style="left:14%;top:64%">#22 · Midfield</span>
+            <div class="play-glyph"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><use href="#i-play"/></svg></div>
+          </div>
+          <div class="transport">
+            <div class="scrubber"><span class="scrubber__played"></span><span class="scrubber__head"></span></div>
+            <div class="transport__row">
+              <span class="tc">00:14:32 / 00:48:10</span>
+              <span class="transport__icons">
+                <svg aria-hidden="true"><use href="#i-skip-back"/></svg>
+                <svg aria-hidden="true"><use href="#i-step-back"/></svg>
+                <svg class="is-primary" aria-hidden="true"><use href="#i-pause"/></svg>
+                <svg aria-hidden="true"><use href="#i-step-fwd"/></svg>
+                <svg aria-hidden="true"><use href="#i-skip-fwd"/></svg>
+              </span>
+              <span class="spacer"></span>
+              <span class="chip">0.25×</span>
+              <span class="chip chip--on">A–B loop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Trust strip ============ -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-strip__inner" data-reveal>
+      <span class="trust-chip"><svg aria-hidden="true"><use href="#i-aperture"/></svg> 8K whole-field master</span>
+      <span class="trust-chip"><svg aria-hidden="true"><use href="#i-hard-drive"/></svg> $400 camera you own outright</span>
+      <span class="trust-chip"><svg aria-hidden="true"><use href="#i-zap"/></svg> Playable as soon as it offloads</span>
+      <span class="trust-chip"><svg aria-hidden="true"><use href="#i-download"/></svg> Exportable telestration &amp; master</span>
+      <span class="trust-chip"><svg aria-hidden="true"><use href="#i-clipboard"/></svg> Built by a head coach who writes the code</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Problem ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">The problem</p>
+      <h2>Your film shouldn't be hostage to your <span class="ink">hardware</span>.</h2>
+    </div>
+    <div class="measure" data-reveal style="margin-top:var(--s5)">
+      <p class="lead" style="margin-bottom:var(--s4)">Most lacrosse programs rent their way into a corner. A $1,300–$1,900 camera that needs an active subscription to do its job. Footage that lands the next day, after the teaching moment is gone. Drawings you can't pull out of the platform. Pricing you can only learn by getting on a call. And film that lives behind someone else's storage quota and contract — so the day you leave, you're negotiating to get your own season back.</p>
+      <p style="margin-bottom:var(--s4)">None of that makes your players better. It just makes leaving expensive.</p>
+      <p><strong>OurSight starts from the opposite assumption:</strong> the film is yours, the camera is a commodity you own, and the price is on the page.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Three-step ============ -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">How it works</p>
+      <h2>Capture. Online instantly. Coach in <span class="ink">lacrosse</span>.</h2>
+      <p class="lead">Three steps, no proprietary hardware, no waiting on a cloud queue.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal>
+        <span class="step__n">STEP 01</span>
+        <div class="step__icon"><svg aria-hidden="true"><use href="#i-aperture"/></svg></div>
+        <h3>Capture the whole field</h3>
+        <p>One tap on a $400 action cam at a midfield pole records the entire field in 8K. Zoom and crop in software later — no motorized rig, no proprietary camera.</p>
+      </div>
+      <div class="step" data-reveal data-reveal-delay="90">
+        <span class="step__n">STEP 02</span>
+        <div class="step__icon"><svg aria-hidden="true"><use href="#i-cloud"/></svg></div>
+        <h3>Online the moment it offloads</h3>
+        <p>Offload on WiFi at the station and it's playable right away — adaptive, no-latency streaming with the DRM-free master kept safe in your cloud. No next-day processing queue.</p>
+      </div>
+      <div class="step" data-reveal data-reveal-delay="180">
+        <span class="step__n">STEP 03</span>
+        <div class="step__icon"><svg aria-hidden="true"><use href="#i-clipboard"/></svg></div>
+        <h3>Break it down in your language</h3>
+        <p>Tag players to moments, draw on the frame, prescribe trainings tied to clips, and talk to your players right on the timecode — in clears, rides, and ground balls, not generic stats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Comparison ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">The honest comparison</p>
+      <h2>What you keep vs. what you <span class="ink">rent</span>.</h2>
+      <p class="lead">We respect Veo and Hudl — they made film analysis table stakes. The difference is ownership: where the camera, the footage, and the price actually live.</p>
+    </div>
+
+    <div class="compare-frame" data-reveal>
+     <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th scope="col">Capability</th>
+            <th scope="col" class="col-them">Veo</th>
+            <th scope="col" class="col-them">Hudl</th>
+            <th scope="col" class="col-us-head">
+              <span class="us-head-wrap cropframe">
+                <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+                OurSight
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Camera</th>
+            <td class="col-them">~$1,300–$1,900, subscription-gated to work</td>
+            <td class="col-them">Facility-mount system (~$2K class)</td>
+            <td class="col-us"><svg class="i-win" aria-hidden="true"><use href="#i-check"/></svg>~$400 action cam you own outright — no lease, no return-on-cancel</td>
+          </tr>
+          <tr>
+            <th scope="row">Your master</th>
+            <td class="col-them">Clips &amp; full match download as MP4</td>
+            <td class="col-them">Lives behind a storage quota and contract</td>
+            <td class="col-us"><svg class="i-win" aria-hidden="true"><use href="#i-check"/></svg>Original 8K master always yours, always exportable, DRM-free</td>
+          </tr>
+          <tr>
+            <th scope="row">Telestration</th>
+            <td class="col-them"><svg class="i-gap" aria-hidden="true"><use href="#i-minus"/></svg>Drawings are stripped from downloads</td>
+            <td class="col-them"><svg class="i-gap" aria-hidden="true"><use href="#i-minus"/></svg>Platform-bound</td>
+            <td class="col-us"><svg class="i-win" aria-hidden="true"><use href="#i-check"/></svg>Exports with the clip — the thing they can't do</td>
+          </tr>
+          <tr>
+            <th scope="row">Time to watch</th>
+            <td class="col-them">Often next-day (upload + cloud processing)</td>
+            <td class="col-them">—</td>
+            <td class="col-us"><svg class="i-win" aria-hidden="true"><use href="#i-check"/></svg>Playable as soon as it offloads</td>
+          </tr>
+          <tr>
+            <th scope="row">Pricing</th>
+            <td class="col-them">Annual plan, upfront</td>
+            <td class="col-them">Quote-driven, multi-year contracts</td>
+            <td class="col-us"><svg class="i-win" aria-hidden="true"><use href="#i-check"/></svg>Transparent, month-to-month — no sales call to learn the price</td>
+          </tr>
+          <tr>
+            <th scope="row">Lacrosse analysis</th>
+            <td class="col-them">Advanced analytics are soccer-only</td>
+            <td class="col-them">Generic templates, tag it yourself</td>
+            <td class="col-us"><svg class="i-win" aria-hidden="true"><use href="#i-check"/></svg>Lacrosse-native: clears, rides, ground balls, draw control</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+    </div>
+    <p class="compare-foot" data-reveal>Comparison reflects publicly documented competitor behavior as of mid-2026; vendors change features, so we re-verify before each major update. Veo's own help docs note clips and full matches download as MP4 but telestration drawings do not, and cite cloud processing that can take up to 24 hours for non-football sports.</p>
+  </div>
+</section>
+
+<!-- ============ Feature deep-dives ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal style="margin-bottom:var(--s8)">
+      <p class="eyebrow">The product</p>
+      <h2>A film room that speaks <span class="ink">lacrosse</span>.</h2>
+      <p class="lead measure" style="margin-inline:auto">Everything you need to turn raw footage into player development — and we label what's live today versus what's on the v1 roadmap, honestly.</p>
+    </div>
+
+    <!-- 1. Film Room -->
+    <div class="feature">
+      <div class="feature__media" data-reveal>
+        <div class="cropframe">
+          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+          <div class="app-ui">
+            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Clip · Clear vs. 10-man ride</span><span class="app-ui__status">8K master</span></div>
+            <div class="stage">
+              <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect class="ln turf" x="20" y="20" width="600" height="320"/>
+                <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
+                <line class="ln" x1="160" y1="20" x2="160" y2="340"/><line class="ln" x1="480" y1="20" x2="480" y2="340"/>
+                <circle class="ln" cx="100" cy="180" r="30"/><circle class="ln" cx="540" cy="180" r="30"/>
+                <circle class="dot-off" cx="220" cy="150" r="9"/><circle class="dot-off" cx="300" cy="220" r="9"/><circle class="dot-off" cx="170" cy="240" r="9"/>
+                <circle class="dot-def" cx="250" cy="170" r="9"/><circle class="dot-def" cx="330" cy="200" r="9"/>
+                <circle class="ball" cx="208" cy="160" r="4"/>
+              </svg>
+              <div class="play-glyph"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><use href="#i-play"/></svg></div>
+            </div>
+            <div class="transport">
+              <div class="scrubber"><span class="scrubber__played" style="inset:0 55% 0 0"></span><span class="scrubber__head" style="left:45%"></span></div>
+              <div class="transport__row">
+                <span class="tc">00:22:08 / 00:48:10</span>
+                <span class="transport__icons"><svg aria-hidden="true"><use href="#i-skip-back"/></svg><svg aria-hidden="true"><use href="#i-step-back"/></svg><svg class="is-primary" aria-hidden="true"><use href="#i-play"/></svg><svg aria-hidden="true"><use href="#i-step-fwd"/></svg><svg aria-hidden="true"><use href="#i-skip-fwd"/></svg></span>
+                <span class="spacer"></span><span class="chip">0.5×</span><span class="chip">J K L</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__body" data-reveal>
+        <p class="eyebrow">Film Room</p>
+        <h3>The teaching moment, while it still matters.</h3>
+        <p>Crystal-clear video and audio that's playable the moment your footage offloads — no cloud queue between the whistle and the film room.</p>
+        <ul class="feature__bullets">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Frame-accurate transport: J/K/L, frame-step, 0.25×–2× speed, A–B loop</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Adaptive, no-latency streaming on any device, plus an installable app</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> The DRM-free 8K master is kept safe and exportable in your cloud</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2. Telestration -->
+    <div class="feature feature--flip">
+      <div class="feature__media" data-reveal>
+        <div class="cropframe">
+          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+          <div class="app-ui">
+            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Annotate · paused 00:22:14</span><span class="app-ui__status">Exportable</span></div>
+            <div class="stage">
+              <svg class="field field--dark" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect class="ln turf" x="20" y="20" width="600" height="320"/>
+                <line class="ln" x1="320" y1="20" x2="320" y2="340"/>
+                <circle class="ln" cx="540" cy="180" r="30"/>
+                <circle class="dot-off" cx="250" cy="150" r="9"/><circle class="dot-off" cx="350" cy="210" r="9"/>
+                <circle class="dot-def" cx="300" cy="175" r="9"/><circle class="dot-def" cx="410" cy="200" r="9"/>
+              </svg>
+              <svg class="stage__overlay" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:3">
+                <path d="M250 150 C 300 120, 360 130, 410 175" fill="none" stroke="#5b8bf7" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="250" cy="150" r="20" fill="none" stroke="#5b8bf7" stroke-width="3"/>
+                <path d="M350 210 L 470 210" fill="none" stroke="#5b8bf7" stroke-width="3" stroke-dasharray="8 7" stroke-linecap="round" marker-end="url(#ah)"/>
+                <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#5b8bf7"/></marker></defs>
+              </svg>
+              <div class="tele-toolbar">
+                <button class="is-active" aria-hidden="true" tabindex="-1"><svg><use href="#i-pen"/></svg></button>
+                <button aria-hidden="true" tabindex="-1"><svg><use href="#i-circle"/></svg></button>
+                <button aria-hidden="true" tabindex="-1"><svg><use href="#i-arrow-tool"/></svg></button>
+                <button aria-hidden="true" tabindex="-1"><svg><use href="#i-eraser"/></svg></button>
+              </div>
+            </div>
+            <div class="export-row">
+              <span class="btn-mini"><svg aria-hidden="true"><use href="#i-download"/></svg> Export frame</span>
+              <span class="filemeta">annotated_clip.mp4 · <span class="ok"><svg aria-hidden="true"><use href="#i-check"/></svg>exportable</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__body" data-reveal>
+        <p class="eyebrow">Telestration</p>
+        <h3>Your drawings come with the clip.</h3>
+        <p>Draw on the paused frame, watch it replay as you scrub, and export the annotated frame or clip to share anywhere. The literal thing other platforms strip out of downloads.</p>
+        <ul class="feature__bullets">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Draw, label, and annotate right on the frame</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Annotations replay on scrub — not just a static screenshot</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Export the marked-up clip; it leaves with your drawings intact</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. Watch-engagement -->
+    <div class="feature">
+      <div class="feature__media" data-reveal>
+        <div class="cropframe">
+          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+          <div class="app-ui">
+            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Who studied the film · last 7 days</span><span class="app-ui__status">Team · 24</span></div>
+            <div class="engage">
+              <div class="engage__head"><svg aria-hidden="true"><use href="#i-eye"/></svg> Watch engagement · this week</div>
+              <div class="engage__row"><div class="engage__who"><span class="avatar">RM</span><span>Reese M.</span></div><div class="bars"><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l1"></i></div></div>
+              <div class="engage__row"><div class="engage__who"><span class="avatar">JT</span><span>Jordan T.</span></div><div class="bars"><i class="l2"></i><i class="l3"></i><i class="l1"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i></div></div>
+              <div class="engage__row"><div class="engage__who"><span class="avatar">AK</span><span>Avery K.</span></div><div class="bars"><i class="l1"></i><i class="l2"></i><i class="l2"></i><i class="l1"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i></div></div>
+              <div class="engage__row engage__row--cold"><div class="engage__who"><span class="avatar">DC</span><span>Devin C.</span></div><div class="bars"><i></i><i></i><i class="l1"></i><i></i><i></i><i></i><i></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__body" data-reveal>
+        <p class="eyebrow">Accountability</p>
+        <h3>Know who actually studied the film.</h3>
+        <p>A colorful, at-a-glance participation timeline shows who watched, how much, and when — a clean accountability surface, not a guilt trip.</p>
+        <ul class="feature__bullets">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Per-player view time, clip counts, and recent activity at a glance</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Spot who's putting in the work — and who needs a nudge</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Pairs with prescribed trainings so studying becomes a habit</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4. AI insights & deficiency capture -->
+    <div class="feature feature--flip">
+      <div class="feature__media" data-reveal>
+        <div class="cropframe">
+          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+          <div class="app-ui">
+            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">#22 Reese M. · draft insights</span><span class="app-ui__status">Draft · v1</span></div>
+            <div style="padding:16px;display:grid;gap:12px">
+              <div class="engage__head"><svg aria-hidden="true"><use href="#i-spark"/></svg> Patterns worth coaching <span class="tag" style="margin-left:auto">v1</span></div>
+              <div style="border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 14px;display:grid;gap:7px">
+                <div style="display:flex;gap:10px;align-items:center"><span class="chip chip--on">00:31:12</span><span style="font-size:var(--t-small);color:var(--text-strong);font-weight:500">Not getting to the spot in the clear</span></div>
+                <p style="font-size:var(--t-small);margin:0">Trails the break on 3 of 4 clears in this half — review the clip and edit before publishing.</p>
+                <div style="display:flex;gap:8px"><span class="chip"><svg style="width:13px;height:13px" aria-hidden="true"><use href="#i-pen"/></svg> Edit</span><span class="chip chip--on"><svg style="width:13px;height:13px" aria-hidden="true"><use href="#i-check"/></svg> Approve &amp; publish</span></div>
+              </div>
+              <div style="border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 14px;display:grid;gap:7px">
+                <div style="display:flex;gap:10px;align-items:center"><span class="chip chip--on">00:38:47</span><span style="font-size:var(--t-small);color:var(--text-strong);font-weight:500">Forces the feed under pressure</span></div>
+                <p style="font-size:var(--t-small);margin:0">Two unforced turnovers feeding into a double — clickable to the exact moment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__body" data-reveal>
+        <p class="eyebrow">Player development</p>
+        <h3>What each player keeps getting wrong — grounded in the film. <span class="tag">v1</span></h3>
+        <p>OurSight surfaces patterns worth coaching — not getting to a spot in the clear, not enough space, turnovers, drops — each one backed by a clickable citation to the exact moment. You review and edit every insight before a player ever sees it.</p>
+        <ul class="feature__bullets">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Every insight links to the precise clip it came from</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Coach-editable before publish — the AI drafts, you decide</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Grounded in your real film, never generic boilerplate</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5. Tactical diagram -->
+    <div class="feature">
+      <div class="feature__media" data-reveal>
+        <div class="cropframe">
+          <span class="cf-tl"></span><span class="cf-tr"></span><span class="cf-bl"></span><span class="cf-br"></span>
+          <div class="app-ui">
+            <div class="app-ui__chrome"><span class="app-ui__dots"><i></i><i></i><i></i></span><span class="app-ui__crumb">Top-down · clear sequence</span><span class="app-ui__status">AI-assisted</span></div>
+            <div style="padding:14px;background:var(--surface-sunk)">
+              <svg class="field" viewBox="0 0 640 380" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="border:1px solid var(--border)">
+                <rect class="ln turf" x="20" y="20" width="600" height="340"/>
+                <line class="ln" x1="320" y1="20" x2="320" y2="360"/>
+                <line class="ln" x1="160" y1="20" x2="160" y2="360"/><line class="ln" x1="480" y1="20" x2="480" y2="360"/>
+                <circle class="ln" cx="100" cy="190" r="32"/><rect class="ln" x="92" y="180" width="6" height="20"/>
+                <circle class="ln" cx="540" cy="190" r="32"/><rect class="ln" x="542" y="180" width="6" height="20"/>
+                <path class="ln" d="M314 184l12 12M326 184l-12 12"/>
+                <!-- motion lines -->
+                <path d="M150 120 C 240 110, 300 160, 360 150" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="7 6" stroke-linecap="round"/>
+                <path d="M200 280 C 280 260, 330 230, 400 250" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="7 6" stroke-linecap="round"/>
+                <!-- dots -->
+                <circle class="dot-off" cx="150" cy="120" r="11"/><text class="dot-num" x="150" y="120">22</text>
+                <circle class="dot-off" cx="200" cy="280" r="11"/><text class="dot-num" x="200" y="280">7</text>
+                <circle class="dot-off" cx="360" cy="150" r="11"/><text class="dot-num" x="360" y="150">3</text>
+                <circle class="dot-def" cx="250" cy="170" r="11"/><circle class="dot-def" cx="300" cy="250" r="11"/><circle class="dot-def" cx="420" cy="200" r="11"/>
+                <!-- corner click handle -->
+                <rect x="14" y="14" width="14" height="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+                <circle cx="21" cy="21" r="3" fill="#2563eb"/>
+              </svg>
+              <p class="mono" style="margin-top:10px;color:var(--muted)">Coach clicks the field corners once — dots are correctable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__body" data-reveal>
+        <p class="eyebrow">Tactical view</p>
+        <h3>From the sideline angle to a top-down look. <span class="tag tag--assisted">v1 · assisted</span></h3>
+        <p>Click the field corners once and OurSight turns a play into a correctable top-down view of player movement — assisted, not magic, so you can fix any dot before it's gospel.</p>
+        <ul class="feature__bullets">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> You set the field reference; OurSight does the geometry</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Every dot is correctable — you stay in control</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Built to make rides, clears, and rotations easy to see</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Secondary feature tiles -->
+    <div class="tiles">
+      <div class="tile" data-reveal>
+        <div class="tile__icon"><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+        <h3>Playbook &amp; plain-English plays</h3>
+        <p>Store offensive and defensive sets with drawn arrows — or type a play in plain English and get an editable diagram you can link to real film.</p>
+        <div class="tile__tag"><span class="tag">v1</span></div>
+      </div>
+      <div class="tile" data-reveal data-reveal-delay="60">
+        <div class="tile__icon"><svg aria-hidden="true"><use href="#i-video"/></svg></div>
+        <h3>Live film sessions &amp; auto-report</h3>
+        <p>Host a session right in OurSight and walk away with an auto-generated summary — notes and tags pinned to the exact video and the right player.</p>
+        <div class="tile__tag"><span class="tag">v1</span></div>
+      </div>
+      <div class="tile" data-reveal data-reveal-delay="120">
+        <div class="tile__icon"><svg aria-hidden="true"><use href="#i-users"/></svg></div>
+        <h3>Crowdsourced multi-angle</h3>
+        <p>Approved phones can film short clips in-app, so one play can be watched from several angles with a switcher and variable speed. Sync never blocks you.</p>
+        <div class="tile__tag"><span class="tag">v1</span></div>
+      </div>
+      <div class="tile" data-reveal>
+        <div class="tile__icon"><svg aria-hidden="true"><use href="#i-clipboard"/></svg></div>
+        <h3>Trainings &amp; player development</h3>
+        <p>Prescribe trainings tied to specific clips, let players track and complete them, and answer the questions they tag right on the moment in question.</p>
+      </div>
+      <div class="tile" data-reveal data-reveal-delay="60">
+        <div class="tile__icon"><svg aria-hidden="true"><use href="#i-calendar"/></svg></div>
+        <h3>Scheduling &amp; live calendar</h3>
+        <p>Build your schedule and share a live, subscribable calendar link that updates itself — with a one-way import to bring an existing schedule over.</p>
+        <div class="tile__tag"><span class="tag">v1</span></div>
+      </div>
+      <div class="tile" data-reveal data-reveal-delay="120">
+        <div class="tile__icon"><svg aria-hidden="true"><use href="#i-bell"/></svg></div>
+        <h3>Notifications that reach players</h3>
+        <p>Push and email alerts when new film lands, a clip is assigned, or a question gets answered — so the film room comes to them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Camera ============ -->
+<section class="section section--alt" id="camera">
+  <div class="container camera">
+    <div class="camera__photo" data-reveal>
+      <img src="/assets/img/camera-on-pole.jpg" alt="A commodity action camera mounted at the top of a midfield pole overlooking a lacrosse field at dusk" loading="lazy" width="928" height="1152">
+    </div>
+    <div class="camera__body" data-reveal>
+      <p class="eyebrow">The hardware</p>
+      <h2>A $400 camera you <span class="ink">own</span> — not a $1,300 one you rent.</h2>
+      <p style="margin-top:var(--s4)">The whole-field, both-ways, zoom-and-draw view isn't a hardware problem — it's a resolution problem we solve in software. A fixed wide 8K master plus a virtual-camera crop means the camera stays a cheap commodity you buy once and own outright. No lease, no return-on-cancel, no "subscription required" to make the hardware work. The camera is an accessory. The software and the lacrosse data model are the product.</p>
+      <ul class="kit">
+        <li><svg aria-hidden="true"><use href="#i-aperture"/></svg> <span><b>Camera</b> — Insta360 Ace Pro 2, native 8K, flat 157° lens</span> <span class="price">~$400</span></li>
+        <li><svg aria-hidden="true"><use href="#i-sd"/></svg> <span><b>Storage</b> — 512GB card</span> <span class="price">included</span></li>
+        <li><svg aria-hidden="true"><use href="#i-battery"/></svg> <span><b>Power</b> — USB-C power bank for full-game recording</span> <span class="price">included</span></li>
+        <li><svg aria-hidden="true"><use href="#i-pole"/></svg> <span><b>Mount</b> — 15–20 ft midfield pole</span> <span class="price">included</span></li>
+        <li class="kit--total"><svg aria-hidden="true"><use href="#i-check"/></svg> <span><b>All-in</b> — bought once, owned forever</span> <span class="price">≈ $520</span></li>
+      </ul>
+      <p class="mono" style="margin-top:var(--s4);color:var(--muted)">One tap to record · offload on WiFi · no field-LTE bulk upload</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Ownership (dark) ============ -->
+<section class="section section--dark ownership">
+  <img class="ownership__bg" src="/assets/img/hero-field-aerial.jpg" alt="" aria-hidden="true" loading="lazy" width="1376" height="768">
+  <div class="container own-grid">
+    <div data-reveal>
+      <p class="eyebrow">Ownership &amp; privacy</p>
+      <h2>Your film is yours. Your players' privacy is the <span class="ink">point</span>.</h2>
+      <p style="margin-top:var(--s4)">The original 8K master lives in your cloud, DRM-free, and exports anytime — there's no quota deciding which seasons you're allowed to keep, and no contract standing between you and your own footage. And because minors use this product, restraint is a feature: a visible COPPA/FERPA consent ledger, export and delete on request, and redact-on-export keep parents informed and in control. Clarity is the safety mechanism.</p>
+    </div>
+    <ul class="own-points" data-reveal>
+      <li><svg aria-hidden="true"><use href="#i-download"/></svg> Export your master and your telestration anytime — no claw-back</li>
+      <li><svg aria-hidden="true"><use href="#i-shield"/></svg> Visible COPPA/FERPA consent ledger; export or delete on request</li>
+      <li><svg aria-hidden="true"><use href="#i-eye"/></svg> Redact-on-export for anything that leaves the platform</li>
+      <li><svg aria-hidden="true"><use href="#i-lock"/></svg> Multi-tenant security with enforced row-level isolation per org</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ Privacy / consent ledger ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow">Built for minors</p>
+      <h2>Privacy you can <span class="ink">see</span>.</h2>
+      <p class="lead measure" style="margin-inline:auto">No biometric tracking, no black box. Just a calm, visible record of who consented to what — and the controls to act on it.</p>
+    </div>
+    <div class="container--prose" style="padding-inline:0;margin-inline:auto">
+      <div class="ledger" data-reveal>
+        <div class="ledger__head"><span>Player</span><span>Consent</span><span>Export</span><span>Redact</span></div>
+        <div class="ledger__row"><span class="who">Reese M. <small>Guardian: approved 09/02</small></span><span class="yes"><svg aria-hidden="true"><use href="#i-check"/></svg> Granted</span><span class="yes shield"><svg aria-hidden="true"><use href="#i-shield"/></svg> Allowed</span><span class="yes"><svg aria-hidden="true"><use href="#i-check"/></svg> On export</span></div>
+        <div class="ledger__row"><span class="who">Jordan T. <small>Guardian: approved 09/04</small></span><span class="yes"><svg aria-hidden="true"><use href="#i-check"/></svg> Granted</span><span class="yes shield"><svg aria-hidden="true"><use href="#i-shield"/></svg> Allowed</span><span class="yes"><svg aria-hidden="true"><use href="#i-check"/></svg> On export</span></div>
+        <div class="ledger__row"><span class="who">Avery K. <small>Guardian: approved 09/06</small></span><span class="yes"><svg aria-hidden="true"><use href="#i-check"/></svg> Granted</span><span class="yes shield"><svg aria-hidden="true"><use href="#i-shield"/></svg> Allowed</span><span class="yes"><svg aria-hidden="true"><use href="#i-check"/></svg> On export</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Pricing ============ -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow">Pricing</p>
+      <h2>Transparent pricing. On the page, not on a <span class="ink">sales call</span>.</h2>
+      <p class="lead measure" style="margin-inline:auto">We're pre-launch, so this is founding-program pricing for the first programs in — month-to-month, cancel anytime, your master always yours. The camera is bought once and owned; it's never part of a subscription.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card" data-reveal>
+        <h3>Sideline</h3>
+        <p class="price-card__for">For a single team getting started with film.</p>
+        <p class="price-card__price"><b>Early-access intro rate</b></p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Capture-to-cloud with instant adaptive playback</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Full Film Room: transport, tagging, trim</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Exportable telestration</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Threaded coach ↔ player comments</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Your DRM-free 8K master, always exportable</li>
+        </ul>
+        <a class="btn btn-ghost" href="#waitlist">Get early access</a>
+      </div>
+
+      <div class="price-card price-card--rec" data-reveal data-reveal-delay="80">
+        <span class="price-card__rec-pill">Recommended</span>
+        <h3>Program</h3>
+        <p class="price-card__for">For a multi-team program — varsity and JV under one roof.</p>
+        <p class="price-card__price"><b>Founding-program rate</b></p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Everything in Sideline</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Multi-team org with role-based access</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Watch-engagement timeline &amp; accountability</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Trainings &amp; player development</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Lacrosse-native AI insights <span class="tag">v1</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Priority on new v1 features as they ship</li>
+        </ul>
+        <a class="btn btn-primary" href="#waitlist">Get early access <svg class="i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="price-card" data-reveal data-reveal-delay="160">
+        <h3>Club</h3>
+        <p class="price-card__for">For clubs and multi-program organizations that want it all.</p>
+        <p class="price-card__price"><b>Talk to the coach</b></p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Everything in Program</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Multiple programs under one organization</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Live film sessions &amp; auto-reports <span class="tag">v1</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Playbook &amp; plain-English plays <span class="tag">v1</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Crowdsourced multi-angle <span class="tag">v1</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Hands-on founding-partner onboarding</li>
+        </ul>
+        <a class="btn btn-ghost" href="mailto:hello@oursight.app?subject=Book%20a%20demo%20%E2%80%94%20OurSight">Book a demo</a>
+      </div>
+    </div>
+    <p class="pricing-note">The camera kit (about $520) is a one-time purchase you own outright — it's never bundled into a subscription, and it keeps working whether you stay or go.</p>
+  </div>
+</section>
+
+<!-- ============ Founder ============ -->
+<section class="section">
+  <div class="container founder">
+    <div class="founder__photo" data-reveal>
+      <img src="/assets/img/coach-tablet.jpg" alt="A lacrosse coach reviewing game film on a tablet on the sideline at dusk" loading="lazy" width="1264" height="848">
+    </div>
+    <div class="founder__body" data-reveal>
+      <p class="eyebrow">From the founder</p>
+      <h2 style="margin:var(--s3) 0 var(--s5)">Built by a coach who also writes the <span class="ink">code</span>.</h2>
+      <blockquote>
+        <svg style="width:30px;height:30px;color:var(--blue-200);margin-bottom:8px" aria-hidden="true"><use href="#i-quote"/></svg>
+        I'm a head coach, and I'm the developer. I got tired of paying for cameras we didn't own, footage that showed up after the lesson was over, and drawings I couldn't even share. So I'm building the tool I wished I had — lacrosse-native, honest about what it does today, and yours to keep. If you coach lacrosse, I'd genuinely like your help shaping it.
+      </blockquote>
+      <div class="founder__sig">
+        <span class="avatar" style="width:34px;height:34px">OS</span>
+        <span class="who"><b>Head coach &amp; founder</b>OurSight</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--alt" id="faq">
+  <div class="container container--prose" style="margin-inline:auto">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">FAQ</p>
+      <h2>Straight <span class="ink">answers</span>.</h2>
+    </div>
+    <div class="faq" data-accordion data-accordion-single data-reveal>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">What camera do I need, and do I have to buy yours?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>The Insta360 Ace Pro 2 — about $400, with a full kit around $520 (card, power bank, pole). You buy it once from a normal retailer and own it outright. There's no proprietary OurSight camera to lease, and nothing to return if you cancel.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">How much does OurSight cost?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>We're pre-launch with transparent, month-to-month founding pricing — no annual lock-in and no sales call required to learn the number. Founding programs get an intro rate; see Pricing for the tiers.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">Can I get my film out if I leave?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>Yes. Your original 8K master lives in your cloud, DRM-free, and exports anytime — and unlike most platforms, your telestration exports with the clip too. There's no storage quota deciding which seasons you keep and no contract holding your footage.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">Is this actually built for lacrosse, or a generic tool with a lacrosse label?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>Lacrosse-native. Clears, rides, ground balls, and draw control are first-class objects, not custom templates you have to build yourself. AI-assisted insights are grounded in your real film and always coach-editable before a player sees them.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">What's actually live now versus on the roadmap?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>Live at launch: capture-to-cloud with instant playback, the full Film Room, exportable telestration, watch-engagement, trainings, and threaded comments. On the v1 roadmap (and labeled as such across the site): AI deficiency capture, assisted tactical diagrams, the playbook engine, live film sessions with auto-reports, multi-angle, and scheduling. We label phases honestly — if it isn't shipping yet, we say so.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">How fast can I watch footage after a game?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>It's playable as soon as it offloads on WiFi — there's no next-day cloud-processing queue between the final whistle and your film room.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">My players are minors. How do you handle privacy?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>Privacy is treated as a feature. There's a visible COPPA/FERPA consent ledger, export and delete on request, and redact-on-export for anything that leaves the platform. We deliberately keep things text- and engagement-based — no biometric tracking.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">Do you have player or team stats like clears and ground balls?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel role="region"><p>Yes — lacrosse-native metrics down to the player, per team and per opponent. The first version uses coach-confirmable assisted tagging with a deterministic stats engine, so the numbers are yours to verify, not a black box.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Final CTA ============ -->
+<section class="section section--dark cta-band" id="waitlist">
+  <div class="container">
+    <div data-reveal>
+      <p class="eyebrow" style="justify-content:center">Early access</p>
+      <h2>Own your film. Coach in <span class="ink">lacrosse</span> language.</h2>
+      <p class="lead">We're opening early access to a small group of founding programs. No proprietary camera, no contract, no sales call — just the tool a coach actually built to use.</p>
+
+      <form class="waitlist" data-waitlist-form action="#" novalidate>
+        <div class="waitlist__row">
+          <input type="email" name="email" placeholder="you@yourprogram.org" aria-label="Email address" required autocomplete="email">
+          <button class="btn btn-primary" type="submit">Get early access</button>
+        </div>
+        <p data-form-msg aria-live="polite"></p>
+      </form>
+
+      <div class="cta-band__btns" style="margin-top:var(--s4)">
+        <a class="btn btn-ghost" href="mailto:hello@oursight.app?subject=Book%20a%20demo%20%E2%80%94%20OurSight">Book a demo</a>
+      </div>
+      <p class="cta-band__micro">Pre-launch · founding-program spots are limited · the master is always yours</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="OurSight home">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="4.5" fill="#fff"/></svg>
+          <span class="brand__name">OurSight</span>
+        </a>
+        <p>Own your film. Forever. Coach-owned lacrosse film &amp; analysis, built by a head coach.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#camera">The camera</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#features">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#waitlist">Early access</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:hello@oursight.app?subject=Book%20a%20demo%20%E2%80%94%20OurSight">Book a demo</a></li>
+          <li><a href="mailto:hello@oursight.app">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="#waitlist">Own your film — export anytime</a></li>
+          <li><a href="#faq">Privacy &amp; consent</a></li>
+          <li><a href="#faq">COPPA/FERPA notice</a></li>
+          <li><a href="#faq">Data export &amp; deletion</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="legalnote">Built on Cloudflare. Your 8K master is stored DRM-free in object storage you can export anytime, with enforced per-organization isolation and privacy controls built for minors.</p>
+      <p class="copy" data-year-line>© <span data-year>2026</span> OurSight · Coach-owned lacrosse film</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

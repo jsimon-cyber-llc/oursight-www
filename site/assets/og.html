@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600;700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px}
+  body{background:#0e1117;color:#fff;font-family:"Schibsted Grotesk",sans-serif;position:relative;overflow:hidden}
+  .bg{position:absolute;inset:0;background:radial-gradient(120% 90% at 78% -10%, rgba(37,99,235,.32) 0%, #0e1117 60%)}
+  .lines{position:absolute;inset:0;opacity:.16}
+  .wrap{position:absolute;inset:0;padding:74px 80px;display:flex;flex-direction:column;justify-content:space-between;z-index:2}
+  .top{display:flex;align-items:center;gap:18px}
+  .mark{width:60px;height:60px}
+  .name{font-weight:600;font-size:40px;letter-spacing:-.01em}
+  h1{font-weight:700;font-size:78px;line-height:1.02;letter-spacing:-.03em;max-width:18ch}
+  .ink{color:#5b8bf7}
+  .sub{display:flex;align-items:center;gap:14px;font-family:"Geist Mono",monospace;font-weight:500;font-size:21px;letter-spacing:.04em;color:#aab2c4;text-transform:uppercase}
+  .pip{width:10px;height:10px;border-left:2px solid #5b8bf7;border-top:2px solid #5b8bf7}
+</style></head>
+<body>
+  <div class="bg"></div>
+  <svg class="lines" viewBox="0 0 1200 630" preserveAspectRatio="none"><g fill="none" stroke="#fff" stroke-width="1.4">
+    <rect x="40" y="40" width="1120" height="550"/><line x1="600" y1="40" x2="600" y2="590"/>
+    <line x1="300" y1="40" x2="300" y2="590"/><line x1="900" y1="40" x2="900" y2="590"/>
+    <circle cx="180" cy="315" r="70"/><circle cx="1020" cy="315" r="70"/>
+  </g></svg>
+  <div class="wrap">
+    <div class="top">
+      <svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="square"><path d="M16 24V16h8"/><path d="M40 16h8v8"/><path d="M48 40v8h-8"/><path d="M24 48h-8v-8"/></g><circle cx="32" cy="32" r="4.5" fill="#fff"/></svg>
+      <span class="name">OurSight</span>
+    </div>
+    <h1>Own your film. Coach in <span class="ink">lacrosse</span> language.</h1>
+    <div class="sub"><span class="pip"></span> Coach-owned lacrosse film &amp; analysis · No lock-in</div>
+  </div>
+</body></html>

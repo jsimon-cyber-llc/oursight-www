@@ -1,0 +1,110 @@
+/* ============================================================
+   OurSight — Design Tokens
+   Calm broadcast instrument: ~90% cool-gray + white, blue rationed
+   to "this is OurSight / this matters", red caged to the record dot.
+   ============================================================ */
+
+:root {
+  /* ---------- Fonts ---------- */
+  --font-display: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body:    "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---------- White / paper ---------- */
+  --white:  #ffffff;
+  --paper:  #fbfbfd;
+
+  /* ---------- Cool-gray ramp (hue ~254, low chroma) ---------- */
+  --gray-25:  #fbfbfd;
+  --gray-50:  #f5f6f9;
+  --gray-100: #eceef3;
+  --gray-150: #e4e7ee;
+  --gray-200: #dde0e8;
+  --gray-300: #c3c8d4;
+  --gray-400: #969db0;
+  --gray-500: #6b7384;
+  --gray-600: #4a5161;
+  --gray-700: #353b49;
+  --gray-800: #272c38;
+  --gray-900: #161a23;
+  --gray-950: #0e1117;
+
+  /* ---------- Brand blue ramp (keyed to #2563eb) ---------- */
+  --blue-50:  #eef3ff;
+  --blue-100: #dbe5ff;
+  --blue-200: #b9ccff;
+  --blue-400: #5b8bf7;
+  --blue-500: #2563eb;
+  --blue-600: #1d4ed8;
+  --blue-700: #1a3fb0;
+  --blue-glow: rgba(37, 99, 235, 0.14);
+
+  /* ---------- Reserved red — LIVE / RECORD / DESTRUCTIVE only ---------- */
+  --live:      #e5484d;
+  --live-glow: rgba(229, 72, 77, 0.30);
+
+  /* ---------- Utility (functional only) ---------- */
+  --success: #2f855a;
+  --amber:   #b7791f;
+
+  /* ============ Semantic tokens (use these in components) ============ */
+  --bg:            var(--white);
+  --bg-alt:        var(--paper);
+  --bg-dark:       var(--gray-900);
+  --bg-stage:      var(--gray-950);
+  --surface:       var(--white);
+  --surface-sunk:  var(--gray-50);
+  --text:          var(--gray-800);
+  --text-strong:   var(--gray-900);
+  --text-body:     var(--gray-600);
+  --muted:         var(--gray-500);
+  --muted-dark:    #aab2c4;
+  --border:        var(--gray-200);
+  --border-strong: var(--gray-300);
+  --primary:       var(--blue-500);
+  --primary-hover: var(--blue-600);
+  --primary-tint:  var(--blue-50);
+  --on-primary:    var(--white);
+  --focus:         var(--blue-500);
+  --reticle:       var(--blue-500);
+  --reticle-dark:  var(--blue-400);
+
+  /* ---------- Layout ---------- */
+  --container:       1200px;
+  --container-wide:  1320px;
+  --container-prose: 720px;
+  --gutter: clamp(20px, 5vw, 56px);
+
+  /* Spacing scale (8px base) */
+  --s1: 8px;  --s2: 12px;  --s3: 16px;  --s4: 24px;  --s5: 32px;
+  --s6: 48px; --s7: 64px;  --s8: 96px;  --s9: 128px;
+  --section-y: clamp(72px, 10vw, 128px);
+
+  /* Radius */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(22, 26, 35, .06);
+  --shadow-md: 0 12px 32px -8px rgba(22, 26, 35, .12);
+  --shadow-lg: 0 24px 56px -16px rgba(22, 26, 35, .16);
+
+  /* ---------- Type scale ---------- */
+  --t-hero:    clamp(2.75rem, 5.5vw, 4.5rem);
+  --t-h2:      clamp(2rem, 3.5vw, 2.75rem);
+  --t-h3:      1.5rem;
+  --t-title:   1.125rem;
+  --t-lead:    clamp(1.125rem, 1.6vw, 1.3125rem);
+  --t-body:    1.0625rem;
+  --t-small:   0.875rem;
+  --t-ui:      0.875rem;
+  --t-eyebrow: 0.8125rem;
+  --t-data:    0.8125rem;
+  --t-data-xl: clamp(1.75rem, 3vw, 2.5rem);
+  --t-tag:     0.6875rem;
+
+  --header-h: 64px;
+}
