@@ -82,6 +82,8 @@
   <symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
   <symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
   <symbol id="i-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></symbol>
+  <symbol id="i-audio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></symbol>
+  <symbol id="i-scan-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="1"/><path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0"/></symbol>
   <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
   <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12.8 2.2 8.5 3.9a1 1 0 0 1 0 1.8l-8.5 3.9a2 2 0 0 1-1.6 0L2.6 7.9a1 1 0 0 1 0-1.8l8.5-3.9a2 2 0 0 1 1.6 0Z"/><path d="m22 17.6-9.2 4.2a2 2 0 0 1-1.6 0L2 17.6"/><path d="m22 12.6-9.2 4.2a2 2 0 0 1-1.6 0L2 12.6"/></symbol>
@@ -595,6 +597,69 @@
   </div>
 </section>
 
+<!-- ============ The analysis engine — three models ============ -->
+<section class="section section--alt" id="analysis">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow">The analysis engine</p>
+      <h2>Three models read every <span class="ink">play</span>.</h2>
+      <p class="lead measure" style="margin-inline:auto">OurSight doesn't just store your film — it watches it, listens to it, and reasons about it. Three specialized models turn raw footage into coaching, and you edit every insight before a player ever sees it.</p>
+    </div>
+
+    <div class="engine" data-reveal>
+      <div class="engine__source">
+        <svg class="field field--dark" viewBox="0 0 640 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect class="ln turf" x="16" y="16" width="608" height="268"/>
+          <line class="ln" x1="320" y1="16" x2="320" y2="284"/>
+          <circle class="ln" cx="96" cy="150" r="26"/><circle class="ln" cx="544" cy="150" r="26"/>
+          <circle class="dot-off" cx="280" cy="130" r="8"/><circle class="dot-off" cx="360" cy="180" r="8"/>
+          <circle class="dot-def" cx="320" cy="150" r="8"/><circle class="ball" cx="292" cy="140" r="4"/>
+        </svg>
+        <span class="engine__src-label"><svg aria-hidden="true"><use href="#i-aperture"/></svg> Your film + audio · 8K master</span>
+      </div>
+
+      <div class="engine__models">
+        <div class="model-card">
+          <div class="model-card__icon"><svg aria-hidden="true"><use href="#i-scan-eye"/></svg></div>
+          <p class="model-card__role">Computer vision</p>
+          <h3>It watches</h3>
+          <p>Detects and tracks the players, the ball, and the field — turning a sideline angle into clears, ground balls, and a correctable top-down view of positioning.</p>
+          <p class="model-card__tech">RF-DETR · ByteTrack · homography</p>
+          <span class="tag tag--assisted">v1 · assisted</span>
+        </div>
+        <div class="model-card">
+          <div class="model-card__icon"><svg aria-hidden="true"><use href="#i-audio"/></svg></div>
+          <p class="model-card__role">Speech-to-text</p>
+          <h3>It listens</h3>
+          <p>Transcribes the film and your live sessions with word-level timing, then surfaces patterns like “coach keeps saying this.” Speaker A vs. B — never voiceprints.</p>
+          <p class="model-card__tech">Deepgram Nova-3 · diarized</p>
+          <span class="tag">v1</span>
+        </div>
+        <div class="model-card">
+          <div class="model-card__icon"><svg aria-hidden="true"><use href="#i-spark"/></svg></div>
+          <p class="model-card__role">Grounded language model</p>
+          <h3>It reasons</h3>
+          <p>Turns all of it into per-player coaching — what each player keeps missing — with every claim clickable to the exact moment it came from.</p>
+          <p class="model-card__tech">Claude · Citations</p>
+          <span class="tag">v1</span>
+        </div>
+      </div>
+
+      <div class="engine__out">
+        <svg aria-hidden="true"><use href="#i-clipboard"/></svg>
+        <span><b>You review and edit</b> every insight, then publish it to the player.</span>
+      </div>
+    </div>
+
+    <ul class="engine__trust" data-reveal>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg> Grounded in your film — every claim links to the clip it came from</li>
+      <li><svg aria-hidden="true"><use href="#i-pen"/></svg> Coach-editable before publish — the model drafts, you decide</li>
+      <li><svg aria-hidden="true"><use href="#i-shield"/></svg> No biometrics — no face or voice identity, ever</li>
+      <li><svg aria-hidden="true"><use href="#i-spark"/></svg> Your corrections train it — a lacrosse model that sharpens with use</li>
+    </ul>
+  </div>
+</section>
+
 <!-- ============ Immersive "film room" band ============ -->
 <section class="section--dark action-band action-band--right" aria-labelledby="filmroom">
   <img class="action-band__bg" src="assets/img/filmroom-band.jpg" alt="" aria-hidden="true" loading="lazy" width="1376" height="768">
@@ -838,6 +903,7 @@
           <li><a href="#features">Features</a></li>
           <li><a href="#camera">The camera</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#analysis">The analysis engine</a></li>
           <li><a href="#features">Roadmap</a></li>
         </ul>
       </div>
