@@ -316,20 +316,22 @@ strong { color: var(--text-strong); font-weight: 600; }
 .player__time { margin-left: auto; font-family: var(--font-mono); font-size: var(--t-tag); color: var(--muted); }
 
 /* ---------------- Hero ---------------- */
-.hero { position: relative; padding-top: calc(var(--header-h) + clamp(40px, 7vw, 84px)); padding-bottom: var(--section-y); overflow: hidden; }
+.hero { position: relative; padding-top: calc(var(--header-h) + clamp(44px, 7vw, 96px)); padding-bottom: var(--section-y); overflow: hidden; text-align: center; }
 .hero::before {
-  content: ""; position: absolute; z-index: 0; right: -10%; top: 0; width: 70%; height: 720px;
-  background: radial-gradient(closest-side, var(--blue-glow), transparent 72%); filter: blur(8px);
+  content: ""; position: absolute; z-index: 0; left: 50%; top: 0; width: min(900px, 90%); height: 560px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, var(--blue-glow), transparent 72%); filter: blur(8px); pointer-events: none;
 }
-.hero__grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.02fr 1.18fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
-.hero__eyebrow { margin-bottom: var(--s4); }
-.hero h1 { margin-bottom: var(--s4); }
-.hero .lead { max-width: 36ch; margin-bottom: var(--s5); }
-.hero__cta { display: flex; flex-wrap: wrap; gap: var(--s3); margin-bottom: var(--s4); }
-.hero__trust { font-size: var(--t-small); color: var(--muted); max-width: 46ch; display: flex; gap: 8px; align-items: flex-start; }
-.hero__trust svg { width: 16px; height: 16px; color: var(--gray-400); flex: none; margin-top: 2px; }
-.hero__visual { position: relative; }
-.hero__visual .app-ui { box-shadow: var(--shadow-lg); }
+.hero__top { position: relative; z-index: 1; max-width: 880px; margin-inline: auto; }
+.hero__eyebrow { margin-bottom: var(--s4); justify-content: center; }
+.hero h1 { margin-bottom: var(--s4); text-wrap: balance; }
+.hero__br { display: none; }                 /* let text-wrap:balance set the lines */
+.hero__sub { max-width: 52ch; margin: 0 auto var(--s5); }
+.hero__cta { display: flex; flex-wrap: wrap; gap: var(--s3); justify-content: center; }
+.hero__media { position: relative; z-index: 1; margin-top: clamp(40px, 6vw, 76px); }
+.hero__media img { width: 100%; aspect-ratio: 16 / 7; object-fit: cover; object-position: center 46%;
+  border-radius: var(--r-lg); border: 1px solid var(--border); box-shadow: var(--shadow-lg); display: block; }
+@media (max-width: 700px) { .hero__media img { aspect-ratio: 4 / 3; } }
 
 /* ---------------- Trust strip ---------------- */
 .trust-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-alt); }
