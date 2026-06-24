@@ -2,3 +2,6 @@
 *.log
 node_modules/
 .vscode/
+
+# internal financial model — never publish
+_brief/
