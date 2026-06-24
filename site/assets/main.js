@@ -139,12 +139,12 @@
           if (other !== btn) {
             other.setAttribute('aria-expanded', 'false');
             const p = other.closest('[data-accordion-item]') && $('[data-accordion-panel]', other.closest('[data-accordion-item]'));
-            if (p) p.style.maxHeight = null;
+            if (p) p.hidden = true; // remove from layout AND the a11y tree
           }
         });
       }
       btn.setAttribute('aria-expanded', String(!open));
-      if (panel) panel.style.maxHeight = open ? null : panel.scrollHeight + 'px';
+      if (panel) panel.hidden = open; // open===true means we're now collapsing
     });
   });
 
@@ -176,9 +176,15 @@
       if (!endpoint || endpoint === '#') {
         e.preventDefault();
         const email = $('input[type="email"]', form);
-        if (email && !email.checkValidity()) { email.reportValidity(); return; }
-        form.classList.add('is-sent');
         const msg = $('[data-form-msg]', form);
+        if (email && !email.checkValidity()) {
+          email.setAttribute('aria-invalid', 'true');
+          if (msg) { if (msg.id) email.setAttribute('aria-describedby', msg.id); msg.textContent = 'Enter a valid email, like you@yourprogram.org'; }
+          email.reportValidity();
+          email.addEventListener('input', () => { email.removeAttribute('aria-invalid'); if (msg) msg.textContent = ''; }, { once: true });
+          return;
+        }
+        form.classList.add('is-sent');
         if (msg) msg.textContent = "You're on the list — we'll be in touch as founding programs come online.";
         form.querySelectorAll('input, button').forEach((el) => { el.disabled = true; });
       }

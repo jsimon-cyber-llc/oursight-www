@@ -191,7 +191,7 @@ strong { color: var(--text-strong); font-weight: 600; }
 .app-ui__dots { display: inline-flex; gap: 6px; flex: none; }
 .app-ui__dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--gray-300); }
 .app-ui__crumb { font-family: var(--font-mono); font-size: var(--t-tag); letter-spacing: .04em;
-  color: var(--muted); text-transform: uppercase; margin-left: 4px;
+  color: var(--gray-600); text-transform: uppercase; margin-left: 4px;
   flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .app-ui__status { flex: none; margin-left: 12px; display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--font-mono); font-size: var(--t-tag); letter-spacing: .06em; text-transform: uppercase; color: var(--blue-600); }
@@ -282,9 +282,9 @@ strong { color: var(--text-strong); font-weight: 600; }
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .cov__track { position: relative; height: 12px; flex: 1; border-radius: 99px; background: var(--gray-150); overflow: hidden; }
 .cov__fill { display: block; height: 100%; border-radius: 99px; }
-.cov--hi { background: var(--success); }
-.cov--mid { background: var(--amber); }
-.cov--lo { background: rgba(37,99,235,.4); }
+.cov--hi { background: var(--blue-500); }
+.cov--mid { background: var(--blue-400); }
+.cov--lo { background: var(--blue-200); }
 .cov__pct { width: 38px; flex: none; text-align: right; font-family: var(--font-mono); font-size: var(--t-tag); color: var(--muted); }
 
 /* ---------------- Film player (1:1 with the real OurSight FilmPlayer) ---------------- */
@@ -427,14 +427,21 @@ strong { color: var(--text-strong); font-weight: 600; }
 /* feature tile grid (secondary features) */
 .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s4); margin-top: var(--s7); }
 .tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); box-shadow: var(--shadow-sm);
-  padding: var(--s5); transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease; }
+  padding: var(--s5); transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+  display: flex; flex-direction: column; }
 .tile:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); transform: translateY(-2px); }
 .tile__icon { width: 38px; height: 38px; border-radius: var(--r-sm); background: var(--blue-50); color: var(--blue-600);
   display: flex; align-items: center; justify-content: center; margin-bottom: var(--s3); }
 .tile__icon svg { width: 20px; height: 20px; }
 .tile h3 { font-size: var(--t-title); margin-bottom: 8px; }
 .tile p { font-size: var(--t-small); }
-.tile__tag { margin-top: var(--s3); }
+.tile__tag { margin-top: auto; padding-top: var(--s3); min-height: 22px; }
+
+/* ---------------- Film-room split (light) ---------------- */
+.filmroom { display: grid; grid-template-columns: 6fr 5fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.filmroom__media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--r-lg);
+  border: 1px solid var(--border); box-shadow: var(--shadow-md); display: block; }
+@media (max-width: 880px) { .filmroom { grid-template-columns: 1fr; } }
 
 /* ---------------- Analysis engine (three models) ---------------- */
 .engine { position: relative; max-width: 1000px; margin: var(--s7) auto 0; display: grid; gap: var(--s5); justify-items: center; }
@@ -547,9 +554,7 @@ strong { color: var(--text-strong); font-weight: 600; }
   padding: var(--s4) 0; text-align: left; font-family: var(--font-display); font-weight: 600; font-size: var(--t-title); color: var(--text-strong); }
 .faq__trigger svg { width: 20px; height: 20px; color: var(--gray-400); flex: none; transition: transform .2s ease; }
 .faq__trigger[aria-expanded="true"] svg { transform: rotate(180deg); color: var(--primary); }
-.faq__panel { overflow: hidden; max-height: 0; transition: max-height .25s ease; }
 .faq__panel p { padding-bottom: var(--s4); color: var(--text-body); }
-@media (prefers-reduced-motion: reduce) { .faq__panel { transition: none; } }
 
 /* ---------------- Final CTA ---------------- */
 .cta-band { position: relative; overflow: hidden; text-align: center; }
@@ -579,8 +584,8 @@ strong { color: var(--text-strong); font-weight: 600; }
 .footer__brand p { font-size: var(--t-small); color: var(--muted); max-width: 32ch; }
 .footer__col h4 { font-family: var(--font-mono); font-size: var(--t-tag); letter-spacing: .08em; text-transform: uppercase;
   color: var(--muted); font-weight: 500; margin-bottom: var(--s3); }
-.footer__col ul { display: grid; gap: 11px; }
-.footer__col a { color: var(--text-body); font-size: var(--t-small); }
+.footer__col ul { display: grid; gap: 8px; }
+.footer__col a { color: var(--text-body); font-size: var(--t-small); display: inline-block; padding-block: 4px; }
 .footer__col a:hover { color: var(--text-strong); }
 .footer__bottom { margin-top: var(--s7); padding-top: var(--s4); border-top: 1px solid var(--border);
   display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; }
@@ -636,13 +641,6 @@ strong { color: var(--text-strong); font-weight: 600; }
   .footer__top { grid-template-columns: 1fr; }
   .waitlist__row { flex-direction: column; }
   .price-card { padding: var(--s5) var(--s4); }
-  /* keep the mockup transport controls fully visible on narrow phones */
-  .transport__row { flex-wrap: wrap; row-gap: 8px; }
-  .transport__row .spacer { display: none; }
-  /* consent ledger: tighten density so all four columns stay legible on phones */
-  .ledger__head, .ledger__row { padding: 11px 12px; gap: 6px; }
-  .ledger__head { font-size: 0.625rem; letter-spacing: .04em; }
-  .ledger__row { font-size: 0.8125rem; }
-  .ledger .yes { font-size: 0.75rem; gap: 4px; }
-  .ledger__row .who small { font-size: 0.625rem; }
+  .tile { padding: var(--s4); }
+  .tile__icon { margin-bottom: var(--s2); }
 }

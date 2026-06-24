@@ -6,7 +6,7 @@
 <title>OurSight — Coach-Owned Lacrosse Film &amp; Analysis</title>
 <meta name="description" content="Whole-field lacrosse film on a $400 camera you own outright. Instant playback, exportable telestration, lacrosse-native analysis. No lock-in. Early access open.">
 <link rel="canonical" href="https://oursight.app/">
-<meta name="theme-color" content="#2563eb">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
@@ -33,6 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<link rel="preload" as="image" href="assets/img/hero-lacrosse.jpg" fetchpriority="high">
 <link rel="stylesheet" href="assets/tokens.css">
 <link rel="stylesheet" href="assets/styles.css">
 
@@ -143,14 +144,14 @@
   <div class="container hero__top" data-reveal>
     <p class="eyebrow hero__eyebrow">Coach-owned lacrosse film &amp; analysis</p>
     <h1>Own your film. Coach in <span class="ink">lacrosse</span> language.</h1>
-    <p class="lead hero__sub">Whole-field 8K on a camera you own — instant, exportable, and lacrosse-native.</p>
+    <p class="lead hero__sub">Whole-field 8K on a camera you own. Instant, exportable, yours.</p>
     <div class="hero__cta">
       <a class="btn btn-primary btn-lg" href="#waitlist">Get early access <svg class="i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
     </div>
   </div>
-  <figure class="hero__media container--wide" data-reveal data-reveal-delay="120">
-    <img src="assets/img/hero-lacrosse.jpg" alt="A lacrosse game under floodlights — players in motion across the field" width="1376" height="768">
+  <figure class="hero__media container container--wide" data-reveal data-reveal-delay="120">
+    <img src="assets/img/hero-lacrosse.jpg" alt="A lacrosse game under floodlights — players in motion across the field" width="1376" height="768" fetchpriority="high" decoding="async">
   </figure>
 </section>
 
@@ -175,7 +176,7 @@
       <h2>Your film shouldn't be hostage to your <span class="ink">hardware</span>.</h2>
     </div>
     <div class="measure" data-reveal style="margin-top:var(--s5)">
-      <p class="lead" style="margin-bottom:var(--s4)">Most programs rent their way into a corner. A $1,800 camera that won't work without a subscription. Footage that lands the next day. Drawings locked in the platform. The day you leave, you negotiate to get your own season back.</p>
+      <p class="lead" style="margin-bottom:var(--s4)">Most programs rent their way into a corner. A $1,300–$1,900 camera that won't work without a subscription. Footage that lands the next day. Drawings locked in the platform. The day you leave, you negotiate to get your own season back.</p>
       <p><strong>OurSight starts from the opposite:</strong> the film is yours, the camera is yours, the price is on the page.</p>
     </div>
   </div>
@@ -525,6 +526,7 @@
         <div class="tile__icon"><svg aria-hidden="true"><use href="#i-clipboard"/></svg></div>
         <h3>Trainings &amp; player development</h3>
         <p>Prescribe trainings tied to clips; answer player questions right on the moment.</p>
+        <div class="tile__tag"></div>
       </div>
       <div class="tile" data-reveal data-reveal-delay="60">
         <div class="tile__icon"><svg aria-hidden="true"><use href="#i-calendar"/></svg></div>
@@ -536,6 +538,7 @@
         <div class="tile__icon"><svg aria-hidden="true"><use href="#i-bell"/></svg></div>
         <h3>Notifications that reach players</h3>
         <p>Push and email alerts when film lands, a clip is assigned, or a question is answered.</p>
+        <div class="tile__tag"></div>
       </div>
     </div>
   </div>
@@ -547,7 +550,7 @@
     <div class="section-head section-head--center" data-reveal>
       <p class="eyebrow">The analysis engine</p>
       <h2>Three models read every <span class="ink">play</span>.</h2>
-      <p class="lead measure" style="margin-inline:auto">It watches the film, listens to the audio, and reasons about both — then hands you coaching to edit before a player sees it.</p>
+      <p class="lead measure" style="margin-inline:auto">It reads every play — and hands you coaching to edit before any player sees it.</p>
     </div>
 
     <div class="engine" data-reveal>
@@ -600,13 +603,13 @@
 </section>
 
 <!-- ============ Immersive "film room" band ============ -->
-<section class="section--dark action-band action-band--right" aria-labelledby="filmroom">
-  <img class="action-band__bg" src="assets/img/filmroom-band.jpg" alt="" aria-hidden="true" loading="lazy" width="1376" height="768">
-  <div class="container">
-    <div class="action-band__copy" data-reveal>
+<section class="section section--alt" aria-labelledby="filmroom">
+  <div class="container filmroom">
+    <figure class="filmroom__media" data-reveal><img src="assets/img/filmroom-band.jpg" alt="A lacrosse team breaking down game film together" loading="lazy" width="1376" height="768"></figure>
+    <div class="filmroom__body" data-reveal>
       <p class="eyebrow">In the film room</p>
       <h2 id="filmroom">Where the season actually gets <span class="ink">better</span>.</h2>
-      <p class="lead">Break the game down together. Every player goes home with clips tied to their reps — then you see who put the work in.</p>
+      <p>Break the game down together. Every player goes home with clips tied to their reps — then you see who put the work in.</p>
     </div>
   </div>
 </section>
@@ -623,7 +626,7 @@
     </div>
     <div class="camera__body" data-reveal>
       <p class="eyebrow">The hardware</p>
-      <h2>A $400 camera you <span class="ink">own</span> — not a $1,300 one you rent.</h2>
+      <h2>A $400 camera you <span class="ink">own</span> — not a $1,500 one you rent.</h2>
       <p style="margin-top:var(--s4)">The whole-field view is a resolution problem, not a hardware one. A wide 8K master plus a software crop keeps the camera a commodity — bought once, owned outright, no subscription to make it work. The camera is the accessory. The software is the product.</p>
       <ul class="kit">
         <li><svg aria-hidden="true"><use href="#i-aperture"/></svg> <span><b>Camera</b> — Insta360 Ace Pro 2 · 8K · 157° lens</span> <span class="price">~$400</span></li>
@@ -660,7 +663,7 @@
   <div class="container">
     <div class="section-head section-head--center" data-reveal>
       <p class="eyebrow">Pricing</p>
-      <h2>Transparent pricing. On the page, not on a <span class="ink">sales call</span>.</h2>
+      <h2>Honest pricing. Month-to-month, no contract, your master always <span class="ink">yours</span>.</h2>
       <p class="lead measure" style="margin-inline:auto">Founding-program rates for the first programs in. Month-to-month, cancel anytime, your master always yours.</p>
     </div>
 
@@ -742,32 +745,36 @@
     </div>
     <div class="faq" data-accordion data-accordion-single data-reveal>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">What camera do I need, and do I have to buy yours?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>The Insta360 Ace Pro 2 — about $400, ~$520 with the full kit (card, power bank, pole). You buy it once from a normal retailer and own it outright. No proprietary OurSight camera to lease, nothing to return if you cancel.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-1">What camera do I need, and do I have to buy yours?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-1" hidden><p>The Insta360 Ace Pro 2 — about $400, ~$520 with the full kit (card, power bank, pole). You buy it once from a normal retailer and own it outright. No proprietary OurSight camera to lease, nothing to return if you cancel.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">Can I get my film out if I leave?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>Yes. Your 8K master lives in your cloud and exports anytime — and your telestration exports with the clip, which most platforms won't do. No quota, no contract holding your footage.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-2">Can I get my film out if I leave?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-2" hidden><p>Yes. Your 8K master lives in your cloud and exports anytime — and your telestration exports with the clip, which most platforms won't do. No quota, no contract holding your footage.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">Is this actually built for lacrosse, or a generic tool with a lacrosse label?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>Lacrosse-native. Clears, rides, ground balls, and draw control are built in, not templates you assemble yourself. Insights come from your real film and are coach-editable before any player sees them.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-3">Is this actually built for lacrosse, or a generic tool with a lacrosse label?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-3" hidden><p>Lacrosse-native. Clears, rides, ground balls, and draw control are built in, not templates you assemble yourself. Insights come from your real film and are coach-editable before any player sees them.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">What's actually live now versus on the roadmap?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>Live now: instant playback, the full Film Room, exportable telestration, watch-engagement, trainings, comments. On the v1 roadmap (labeled as such everywhere): AI insights, assisted tactical diagrams, the playbook, live sessions with auto-reports, multi-angle, scheduling. If it isn't shipping yet, we say so.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-4">What's actually live now versus on the roadmap?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-4" hidden><p>Live now: instant playback, the full Film Room, exportable telestration, watch-engagement, trainings, comments. On the v1 roadmap (labeled as such everywhere): AI insights, assisted tactical diagrams, the playbook, live sessions with auto-reports, multi-angle, scheduling. If it isn't shipping yet, we say so.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">How fast can I watch footage after a game?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>As soon as it offloads on WiFi. No next-day processing queue between the final whistle and your film room.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-5">How fast can I watch footage after a game?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-5" hidden><p>As soon as it offloads on WiFi. No next-day processing queue between the final whistle and your film room.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">My players are minors. How do you handle privacy?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>Privacy is a feature. A visible COPPA/FERPA consent ledger, export and delete on request, and redact-on-export. No biometric tracking, ever.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-6">My players are minors. How do you handle privacy?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-6" hidden><p>Privacy is a feature. A visible COPPA/FERPA consent ledger, export and delete on request, and redact-on-export. No biometric tracking, ever.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
-        <button class="faq__trigger" data-accordion-trigger aria-expanded="false">Do you have player or team stats like clears and ground balls?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel role="region"><p>Yes — lacrosse-native metrics per player, team, and opponent. v1 uses coach-confirmable assisted tagging with a deterministic stats engine, so the numbers are yours to verify, not a black box.</p></div>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-7">I'm a parent — what does this mean for my player?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-7" hidden><p>Your coach owns the film and controls access. Your player gets clips tied to their own reps, and privacy is built for minors — a visible consent ledger and delete-on-request. Point your coach here to get early access.</p></div>
+      </div>
+      <div class="faq__item" data-accordion-item>
+        <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-8">Do you have player or team stats like clears and ground balls?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div class="faq__panel" data-accordion-panel id="faq-8" hidden><p>Yes — lacrosse-native metrics per player, team, and opponent. v1 uses coach-confirmable assisted tagging with a deterministic stats engine, so the numbers are yours to verify, not a black box.</p></div>
       </div>
     </div>
   </div>
@@ -778,7 +785,7 @@
   <div class="container">
     <div data-reveal>
       <p class="eyebrow" style="justify-content:center">Early access</p>
-      <h2>Own your film. Coach in <span class="ink">lacrosse</span> language.</h2>
+      <h2>Your season. Your film. <span class="ink">Yours</span>.</h2>
       <p class="lead">Early access is open to a small group of founding programs. No proprietary camera, no contract, no sales call.</p>
 
       <form class="waitlist" data-waitlist-form action="#" novalidate>
@@ -786,7 +793,7 @@
           <input type="email" name="email" placeholder="you@yourprogram.org" aria-label="Email address" required autocomplete="email">
           <button class="btn btn-primary" type="submit">Get early access</button>
         </div>
-        <p data-form-msg aria-live="polite"></p>
+        <p id="waitlist-msg" data-form-msg aria-live="polite"></p>
       </form>
 
       <div class="cta-band__btns" style="margin-top:var(--s4)">
