@@ -540,7 +540,7 @@ strong { color: var(--text-strong); font-weight: 600; }
 /* ---------------- Founder ---------------- */
 .founder { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(28px,5vw,64px); align-items: center; }
 .founder__photo { border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md); }
-.founder__photo img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+.founder__photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; }
 .founder blockquote { font-family: var(--font-display); font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.4;
   letter-spacing: -.01em; color: var(--text-strong); font-weight: 500; }
 .founder__sig { margin-top: var(--s4); display: flex; align-items: center; gap: 12px; }
