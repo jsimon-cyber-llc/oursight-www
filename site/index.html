@@ -31,7 +31,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"></noscript>
 
 <link rel="preload" as="image" href="assets/img/hero-lacrosse.jpg" fetchpriority="high">
 <link rel="stylesheet" href="assets/tokens.css">
@@ -47,6 +48,17 @@
   "description": "Coach-owned lacrosse film, analysis and team development. Whole-field 8K capture on a commodity camera you own, instant playback, exportable telestration, and lacrosse-native analysis. A no-lock-in alternative to Veo and Hudl.",
   "url": "https://oursight.app/",
   "offers": { "@type": "Offer", "category": "Subscription", "availability": "https://schema.org/PreOrder" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OurSight",
+  "url": "https://oursight.app/",
+  "logo": "https://oursight.app/assets/icons/icon-512.png",
+  "description": "Coach-owned lacrosse film, analysis and team development — a no-lock-in alternative to Veo and Hudl.",
+  "founder": { "@type": "Person", "name": "Jack Simon" }
 }
 </script>
 </head>
@@ -147,7 +159,7 @@
     <p class="lead hero__sub">Whole-field 8K capture on a camera you own. Instant playback, exportable, yours.</p>
     <div class="hero__cta">
       <a class="btn btn-primary btn-lg" href="#waitlist">Get early access <svg class="i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+      <a class="hero__textlink" href="#how" style="align-self:center;font-weight:600;color:var(--text-strong);text-decoration:none;padding:8px 4px">See how it works →</a>
     </div>
   </div>
   <figure class="hero__media container container--wide" data-reveal data-reveal-delay="120">
@@ -662,7 +674,7 @@
     <div class="section-head section-head--center" data-reveal>
       <p class="eyebrow">Pricing</p>
       <h2>Honest pricing. Month-to-month, no contract, your master always <span class="ink">yours</span>.</h2>
-      <p class="lead measure" style="margin-inline:auto">Founding-program rates for the first programs in. Month-to-month, cancel anytime, your master always yours.</p>
+      <p class="lead measure" style="margin-inline:auto">Founding-program rates for the first programs in — flat and published, no quotes or sales calls. Month-to-month, cancel anytime, your master always yours.</p>
     </div>
 
     <div class="pricing-grid">
@@ -724,11 +736,11 @@
       <h2 style="margin:var(--s3) 0 var(--s5)">Built by a coach who also writes the <span class="ink">code</span>.</h2>
       <blockquote>
         <svg style="width:30px;height:30px;color:var(--blue-200);margin-bottom:8px" aria-hidden="true"><use href="#i-quote"/></svg>
-        I'm a head coach, and I write the code. I was tired of cameras we didn't own, footage that showed up after the lesson, and drawings I couldn't share. So I'm building the tool I wished I had — lacrosse-native, honest, yours to keep. If you coach lacrosse, I'd love your help shaping it.
+        I built OurSight after a tournament weekend — watching how much my players had grown all season, and realizing I didn't truly understand game film myself until I was about 20. Every athlete deserves that sooner: to see themselves play, understand the game, and have their film, messaging, scheduling, and training in one place — so they're in the driver's seat of their own growth. What you teach shouldn't die on Sunday; the film reinforces it, and you can prescribe the next step. It's the tool I wish my coaches had — and what they were reaching for.
       </blockquote>
       <div class="founder__sig">
-        <span class="avatar" style="width:34px;height:34px">OS</span>
-        <span class="who"><b>Head coach &amp; founder</b>OurSight</span>
+        <span class="avatar" style="width:34px;height:34px">JS</span>
+        <span class="who"><b>Jack Simon</b>Founder &amp; head coach · OurSight</span>
       </div>
     </div>
   </div>
