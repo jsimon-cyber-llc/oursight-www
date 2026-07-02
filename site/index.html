@@ -29,10 +29,9 @@
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/schibsted-grotesk-700.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/geist-400.woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
 
 <link rel="preload" as="image" href="assets/img/hero-lacrosse.jpg" fetchpriority="high">
 <link rel="stylesheet" href="assets/tokens.css">
@@ -656,12 +655,12 @@
     <div data-reveal>
       <p class="eyebrow">Ownership &amp; privacy</p>
       <h2>Your film is yours. Your players' privacy is the <span class="ink">point</span>.</h2>
-      <p style="margin-top:var(--s4)">Your 8K master lives in your cloud, DRM-free, and exports anytime. No quota, no contract between you and your footage. And because players are minors, restraint is a feature: a visible consent ledger, export or delete on request, redact-on-export. Clarity is the safety mechanism.</p>
+      <p style="margin-top:var(--s4)">Your 8K master lives in your cloud, DRM-free, and exports anytime. No quota, no contract between you and your footage. And when a roster includes minors, restraint is a feature: per-purpose consent you can grant or revoke, export or delete on request, and access scoped to each family. Clarity is the safety mechanism.</p>
     </div>
     <ul class="own-points" data-reveal>
       <li><svg aria-hidden="true"><use href="#i-download"/></svg> Export master + telestration anytime</li>
       <li><svg aria-hidden="true"><use href="#i-shield"/></svg> Visible COPPA/FERPA consent ledger</li>
-      <li><svg aria-hidden="true"><use href="#i-eye"/></svg> Redact-on-export</li>
+      <li><svg aria-hidden="true"><use href="#i-eye"/></svg> No biometric tracking, ever</li>
       <li><svg aria-hidden="true"><use href="#i-lock"/></svg> Row-level isolation per org</li>
     </ul>
   </div>
@@ -776,7 +775,7 @@
       </div>
       <div class="faq__item" data-accordion-item>
         <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-6">My players are minors. How do you handle privacy?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-        <div class="faq__panel" data-accordion-panel id="faq-6" hidden><p>Privacy is a feature. A visible COPPA/FERPA consent ledger, export and delete on request, and redact-on-export. No biometric tracking, ever.</p></div>
+        <div class="faq__panel" data-accordion-panel id="faq-6" hidden><p>Privacy is a feature. Per-purpose consent you can grant or revoke, export and delete on request, and access scoped so a parent sees only their own athlete. No biometric tracking, ever.</p></div>
       </div>
       <div class="faq__item" data-accordion-item>
         <button class="faq__trigger" data-accordion-trigger aria-expanded="false" aria-controls="faq-7">I'm a parent — what does this mean for my player?<svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
