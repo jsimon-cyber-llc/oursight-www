@@ -644,3 +644,22 @@ strong { color: var(--text-strong); font-weight: 600; }
   .tile { padding: var(--s4); }
   .tile__icon { margin-bottom: var(--s2); }
 }
+
+/* ---- Mobile: restack the comparison table into per-capability cards ---- */
+@media (max-width: 640px) {
+  .compare-wrap { overflow-x: visible; }
+  .compare-frame::after { display: none; }
+  .compare { min-width: 0; width: 100%; }
+  .compare thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
+  .compare tbody, .compare tbody tr, .compare th, .compare td { display: block; width: auto; }
+  .compare tbody tr { border: 1px solid var(--border); border-radius: var(--r-md); padding: 4px 16px 14px; margin-bottom: 14px; }
+  .compare tbody th[scope="row"] { width: auto; font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; color: var(--text-strong); padding: 12px 0 10px; border-bottom: 1px solid var(--border); }
+  .compare td { border-bottom: 0; padding: 9px 0 0; display: flex; gap: 10px; align-items: baseline; }
+  .compare td::before { content: attr(data-label); flex: 0 0 72px; font-family: var(--font-body); font-weight: 600; font-size: var(--t-small); color: var(--muted); }
+  .compare td.col-us { background: var(--blue-50); border-radius: var(--r-sm); padding: 10px 12px; margin-top: 8px; }
+  .compare td.col-us::before { color: var(--blue-700); }
+  .compare .i-win, .compare .i-gap { margin-right: 4px; }
+
+  /* Founder photo: cap height (face-forward crop) so it doesn't eat a full screen on mobile */
+  .founder__photo img { aspect-ratio: auto; height: 340px; object-position: center 14%; }
+}
