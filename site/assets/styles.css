@@ -662,4 +662,9 @@ strong { color: var(--text-strong); font-weight: 600; }
 
   /* Founder photo: cap height (face-forward crop) so it doesn't eat a full screen on mobile */
   .founder__photo img { aspect-ratio: auto; height: 340px; object-position: center 14%; }
+
+  /* Feature mockups: let grid items shrink so the app-ui mockup fits narrow phones (no h-scroll) */
+  .feature__media, .feature__body { min-width: 0; }
+  .feature__media { padding: 14px; }
+  .app-ui { max-width: 100%; }
 }
